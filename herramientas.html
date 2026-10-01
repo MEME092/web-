@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Calcula una distribución orientativa de tus ingresos mensuales con la regla 50/30/20: necesidades, deseos y ahorro.">
+<link rel="canonical" href="https://4kt.lat/herramientas.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculadora 50/30/20 | Finanzas al Día">
+<meta property="og:description" content="Distribuye tus ingresos mensuales en necesidades, deseos y ahorro con una calculadora gratuita.">
+<title>Calculadora 50/30/20 | Finanzas al Día</title>
+<style>
+:root{--primary:#0f766e;--primary-dark:#115e59;--blue:#275d75;--green:#34794b;--dark:#17324d;--bg:#f4f7f8;--text:#263238;--muted:#5d6b73;--border:#dfe7ea;--card:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.65}header{padding:42px 18px 34px;background:linear-gradient(125deg,var(--dark),var(--primary));color:#fff;text-align:center}header p{margin:8px auto 0;max-width:680px}nav{padding:12px;text-align:center;background:#122b3f}nav a{display:inline-block;margin:4px 9px;color:#fff;text-decoration:none;font-weight:700}nav a:hover{text-decoration:underline}.container{width:min(920px,100% - 32px);margin:30px auto}.intro{margin-bottom:20px}.intro h2{margin:0;color:var(--dark);font-size:1.8rem}.calculator{padding:clamp(20px,4vw,36px);background:var(--card);border:1px solid var(--border);border-radius:10px;box-shadow:0 3px 14px #17324d0a}.form-row{display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:14px;align-items:end}.field label{display:block;margin-bottom:7px;font-weight:700}.field input,.field select{width:100%;min-height:48px;padding:10px 12px;border:1px solid #aebdc3;border-radius:6px;background:#fff;color:var(--text);font:inherit}.field input:focus,.field select:focus{outline:3px solid #0f766e44;border-color:var(--primary)}.hint{margin:8px 0 0;color:var(--muted);font-size:.92rem}.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:26px}.result{padding:18px;border-top:4px solid var(--primary);background:#eff7f6;border-radius:7px}.result:nth-child(2){border-color:var(--blue);background:#f0f5f8}.result:nth-child(3){border-color:var(--green);background:#f0f7f1}.result h3{margin:0;font-size:1rem;color:var(--dark)}.amount{display:block;margin:8px 0 2px;font-size:clamp(1.35rem,4vw,1.9rem);font-weight:700;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}.result p{margin:0;color:var(--muted);font-size:.92rem}.note{margin-top:24px;padding:15px 17px;border-left:4px solid var(--primary);background:#eef5f5}.note p{margin:0}.note p+p{margin-top:8px}footer{padding:25px 18px;background:#122b3f;color:#fff;text-align:center}footer a{color:#d5f5ef;margin:0 5px}@media(max-width:620px){header{padding:32px 18px}.form-row{grid-template-columns:1fr}.results{grid-template-columns:1fr}.result{display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px}.result h3{grid-column:1}.amount{grid-column:2;grid-row:1/3;margin:0}.result p{grid-column:1}}
+</style>
+<style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
+</head>
+<body>
+<header><h1>Finanzas al Día</h1><p>Herramientas sencillas para tomar decisiones con más información</p></header>
+<nav aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="index.html#finanzas">Artículos</a><a href="herramientas.html" aria-current="page">Herramientas</a><a href="sobre-nosotros.html">Sobre nosotros</a><a href="contacto.html">Contacto</a></nav>
+<main class="container">
+<div class="intro"><h2>Calculadora de presupuesto 50/30/20</h2><p>Introduce tus ingresos mensuales netos para ver una distribución orientativa entre necesidades, deseos y ahorro u objetivos financieros.</p></div>
+<section class="calculator" aria-labelledby="calculator-title">
+<h2 id="calculator-title" class="sr-only">Distribución mensual de ingresos</h2>
+<div class="form-row">
+<div class="field"><label for="income">Ingreso mensual neto</label><input id="income" name="income" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Ej. 2500" aria-describedby="income-hint"></div>
+<div class="field"><label for="currency">Moneda</label><select id="currency" name="currency"><option value="MXN">MXN</option><option value="EUR">EUR</option><option value="USD">USD</option><option value="COP">COP</option><option value="ARS">ARS</option><option value="CLP">CLP</option><option value="PEN">PEN</option></select></div>
+</div>
+<p class="hint" id="income-hint">Usa el ingreso disponible después de impuestos. Puedes cambiar la moneda cuando quieras.</p>
+<div class="results" aria-live="polite" aria-atomic="true">
+<div class="result"><h3>Necesidades</h3><output class="amount" id="needs">$0</output><p>50 % · vivienda, comida, transporte y servicios</p></div>
+<div class="result"><h3>Deseos</h3><output class="amount" id="wants">$0</output><p>30 % · ocio, compras y gastos opcionales</p></div>
+<div class="result"><h3>Ahorro y objetivos</h3><output class="amount" id="savings">$0</output><p>20 % · ahorro, fondo de emergencia o deuda</p></div>
+</div>
+<div class="note"><p><strong>Es una guía, no una regla rígida.</strong> El coste de vida, los ingresos y las obligaciones cambian según cada persona. Si tus necesidades superan el 50 %, ajusta las proporciones a tu realidad antes de fijar objetivos.</p><p>Las cantidades se calculan sobre el ingreso que introduces y no se guardan ni se envían.</p></div>
+</section>
+</main>
+<footer><p><strong>Finanzas al Día</strong> · Educación financiera general</p><p><a href="privacidad.html">Privacidad</a> | <a href="aviso-legal.html">Aviso legal</a> | <a href="contacto.html">Contacto</a></p></footer>
+<script>
+const incomeInput = document.querySelector("#income");
+const currencySelect = document.querySelector("#currency");
+const outputs = {
+  needs: document.querySelector("#needs"),
+  wants: document.querySelector("#wants"),
+  savings: document.querySelector("#savings")
+};
+
+function updateBudget() {
+  const income = Math.max(0, Number(incomeInput.value) || 0);
+  const currency = currencySelect.value;
+  const formatter = new Intl.NumberFormat("es", {
+    style: "currency",
+    currency,
+    maximumFractionDigits: 2
+  });
+
+  outputs.needs.value = formatter.format(income * 0.5);
+  outputs.wants.value = formatter.format(income * 0.3);
+  outputs.savings.value = formatter.format(income * 0.2);
+}
+
+incomeInput.addEventListener("input", updateBudget);
+currencySelect.addEventListener("change", updateBudget);
+updateBudget();
+</script>
+</body>
+</html>

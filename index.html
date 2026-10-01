@@ -18,6 +18,12 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.75}header{background:linear-gradient(135deg,var(--dark),var(--primary));color:#fff;padding:54px 20px;text-align:center}header h1{margin:0;font-size:2.6rem;line-height:1.2}header p{max-width:800px;margin:14px auto 0;font-size:1.08rem}nav{background:#122b3f;padding:13px 10px;text-align:center;position:sticky;top:0;z-index:10;box-shadow:0 2px 8px #0002}nav a{color:#fff;text-decoration:none;font-weight:700;margin:0 10px}nav a:hover{color:#7dd3fc}.container{max-width:1050px;margin:28px auto;padding:0 18px}.card,article{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;margin-bottom:22px;box-shadow:0 2px 10px #0000000a}h2{color:var(--primary2);font-size:1.8rem;margin-top:0;border-bottom:2px solid #99d5cf;padding-bottom:8px}h3{color:var(--dark);font-size:1.3rem}a{color:var(--primary2)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.post-title{text-decoration:none}.meta{color:var(--muted);font-size:.92rem}.read-more{font-weight:700;text-decoration:none}.post-image{width:600px;max-width:100%;height:auto;display:block;margin:16px auto;border-radius:10px}.notice{background:#eefaf4;border-left:4px solid var(--accent);padding:15px 18px;margin:20px 0}.legal{color:#4f5d63;font-size:.96rem}footer{background:#122b3f;color:#fff;text-align:center;padding:32px 18px;margin-top:35px}footer a{color:#d5f5ef;margin:0 6px}.breadcrumbs{font-size:.9rem;color:var(--muted);margin-bottom:16px}.toc{background:#f0f7f6;padding:18px;border-radius:10px}.toc a{display:block;margin:6px 0}@media(max-width:700px){header h1{font-size:2rem}nav{position:relative}nav a{display:inline-block;margin:5px 7px}.grid{grid-template-columns:1fr}.card,article{padding:21px}}
 .site-directory ul{columns:2;column-gap:36px}.site-directory li{margin:7px 0;break-inside:avoid}.site-directory a{text-decoration:none}.site-directory a:hover{text-decoration:underline}@media(max-width:700px){.site-directory ul{columns:1}}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Finanzas al Día", "description": "Finanzas al Día: educación financiera sobre ahorro, presupuesto, crédito, inversión, deudas, inflación y planificación financiera.", "url": "https://4kt.lat/", "publisher": {"@type": "Organization", "name": "Finanzas al Día", "url": "https://4kt.lat/"}}</script>
+<style>
+.post-image{display:block;width:min(100%,420px);max-width:100%;aspect-ratio:3/2;height:auto;object-fit:cover;margin:12px auto;border-radius:8px}
+figure{max-width:440px;margin:8px auto 20px;padding:0 8px}
+figure figcaption{color:var(--muted);font-size:.9rem;line-height:1.5;text-align:center}
+@media(max-width:700px){.post-image{width:100%;max-width:100%}figure{padding:0 4px}}
+</style>
 </head>
 <body>
 <header><h1>Finanzas al Día</h1><p>Educación financiera y consejos para tomar mejores decisiones con tu dinero</p></header>
@@ -26,11 +32,13 @@
 <a href="index.html#finanzas">Finanzas</a>
 <a href="index.html#finanzas">Todos los artículos</a>
 <a href="index.html#guias">Guías</a>
+<a href="herramientas.html">Calculadora 50/30/20</a>
 <a href="sobre-nosotros.html">Sobre nosotros</a>
 <a href="contacto.html">Contacto</a>
 <a href="privacidad.html">Privacidad</a>
 <a href="cookies.html">Cookies</a>
 <a href="aviso-legal.html">Aviso legal</a>
+<a href="terminos.html">Términos</a>
 </nav>
 <div class="container">
 
@@ -41,6 +49,12 @@
 <div class="notice"><strong>Importante:</strong> el contenido es general e informativo. No constituye asesoramiento financiero, de inversión, legal o tributario personalizado.</div>
 </section>
 
+<section class="card">
+<h2>Calcula tu presupuesto 50/30/20</h2>
+<p>Prueba una distribución orientativa de tus ingresos entre necesidades, deseos y ahorro. Ajusta los porcentajes a tu situación real.</p>
+<a class="read-more" href="herramientas.html">Abrir la calculadora →</a>
+</section>
+
 <section id="finanzas" class="card">
 <h2>Últimos artículos financieros</h2>
 <div class="grid"><article>
@@ -48,140 +62,140 @@
 <img class="post-image" src="ChatGPT Image 13 ago 2026, 14_55_18.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · presupuesto, finanzas personales, gastos, ahorro</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Aprende a registrar ingresos y gastos, preparar un presupuesto mensual realista y ajustar el plan cuando tus ingresos o prioridades cambien.</p>
 <a class="read-more" href="como-hacer-un-presupuesto.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="como-ahorrar-dinero.html">Cómo ahorrar dinero y crear un fondo de emergencia</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 14_19_36.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · ahorro, fondo de emergencia, finanzas personales</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Una guía para encontrar margen de ahorro, fijar metas alcanzables y separar el dinero destinado a imprevistos de los gastos previsibles.</p>
 <a class="read-more" href="como-ahorrar-dinero.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="interes-compuesto.html">Qué es el interés compuesto y cómo funciona</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 14_26_11.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · interés compuesto, ahorro, inversión</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Entiende cómo los intereses acumulados pueden generar crecimiento con el tiempo y qué papel tienen el plazo, la tasa y las aportaciones.</p>
 <a class="read-more" href="interes-compuesto.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="tarjetas-de-credito.html">Tarjetas de crédito: cómo utilizarlas de forma responsable</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 14_28_08.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · tarjetas de crédito, crédito, finanzas personales</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Revisa fechas de corte y pago, coste de financiar un saldo y medidas prácticas para evitar cargos y usar el crédito con control.</p>
 <a class="read-more" href="tarjetas-de-credito.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="como-empezar-a-invertir.html">Cómo empezar a invertir: conceptos básicos para principiantes</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 14_29_23.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · inversión, riesgo, rentabilidad, principiantes</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Antes de elegir una inversión, define el objetivo y el plazo, compara comisiones y comprende los riesgos y condiciones de salida.</p>
 <a class="read-more" href="como-empezar-a-invertir.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="regla-50-30-20.html">Regla 50/30/20: una forma sencilla de organizar tu dinero</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 14_37_54.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · regla 50/30/20, presupuesto, ahorro</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Conoce cómo distribuir ingresos entre necesidades, deseos y ahorro, y cuándo adaptar los porcentajes a tu coste de vida.</p>
 <a class="read-more" href="regla-50-30-20.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="fondo-de-emergencia.html">Fondo de emergencia: cuánto dinero conviene reservar</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 14_43_13.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · fondo de emergencia, ahorro, imprevistos</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Calcula una reserva según tus gastos esenciales, elige dónde mantenerla disponible y decide qué situaciones justifican usarla.</p>
 <a class="read-more" href="fondo-de-emergencia.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="como-reducir-deudas.html">Cómo organizar tus deudas y recuperar el control financiero</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 14_52_16.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · deudas, crédito, presupuesto</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Ordena saldos, tasas y vencimientos para elegir una estrategia de pago y hablar con acreedores antes de atrasarte.</p>
 <a class="read-more" href="como-reducir-deudas.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="inflacion-y-dinero.html">Inflación: qué significa y cómo puede afectar tu dinero</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 14_54_37.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · inflación, poder adquisitivo, finanzas</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Comprueba cómo cambian tus gastos, protege decisiones de ahorro de corto plazo y consulta datos oficiales comparables.</p>
 <a class="read-more" href="inflacion-y-dinero.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="interes-simple-vs-compuesto.html">Interés simple vs. interés compuesto: diferencias principales</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 14_58_46.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · interés simple, interés compuesto, finanzas</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Compara ambos métodos con ejemplos y observa cómo influyen el tiempo, la tasa y la frecuencia de capitalización.</p>
 <a class="read-more" href="interes-simple-vs-compuesto.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="como-comparar-prestamos.html">Cómo comparar préstamos antes de solicitar financiación</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 15_02_32.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · préstamos, financiación, intereses, crédito</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Evalúa coste total, plazo, comisiones y cambios de tasa para comparar ofertas más allá de la cuota mensual.</p>
 <a class="read-more" href="como-comparar-prestamos.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="metas-financieras.html">Cómo establecer metas financieras realistas</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 15_08_18.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · metas financieras, ahorro, planificación</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Convierte un objetivo amplio en una cantidad, fecha y aportación periódica que puedas revisar y ajustar.</p>
 <a class="read-more" href="metas-financieras.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="errores-finanzas-personales.html">10 errores comunes en las finanzas personales</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 15_11_23.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · finanzas personales, errores financieros, ahorro</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Identifica hábitos que suelen desordenar el presupuesto y crea pequeñas comprobaciones para anticipar gastos y decisiones de crédito.</p>
 <a class="read-more" href="errores-finanzas-personales.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="diferencia-ahorrar-invertir.html">Ahorrar o invertir: cuál es la diferencia</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 15_13_51.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · ahorro, inversión, planificación financiera</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Entiende qué prioriza cada opción, cómo cambia el riesgo y por qué el plazo ayuda a decidir qué hacer con el dinero.</p>
 <a class="read-more" href="diferencia-ahorrar-invertir.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="que-es-liquidez.html">Qué es la liquidez y por qué importa en tus finanzas</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 15_19_36.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · liquidez, activos, finanzas personales</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Aprende cuánto tiempo y coste puede requerir convertir un activo en efectivo y por qué importa en una emergencia.</p>
 <a class="read-more" href="que-es-liquidez.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="diversificacion-inversiones.html">Diversificación: por qué no conviene concentrar todo el riesgo</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 15_23_21.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · diversificación, inversión, riesgo</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Explora cómo repartir exposición entre activos y límites de la diversificación, sin confundirla con una garantía contra pérdidas.</p>
 <a class="read-more" href="diversificacion-inversiones.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="como-leer-cuenta-bancaria.html">Cómo leer y entender los movimientos de una cuenta bancaria</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 15_48_14.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · cuenta bancaria, extracto, gastos</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Interpreta fechas, abonos, cargos y comisiones de un extracto y aprende a investigar movimientos que no reconoces.</p>
 <a class="read-more" href="como-leer-cuenta-bancaria.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="net-worth-patrimonio.html">Cómo calcular tu patrimonio neto personal</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 15_57_58.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · patrimonio neto, activos, pasivos</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Haz un inventario sencillo de activos y obligaciones, calcula la diferencia y úsala para observar cambios con el tiempo.</p>
 <a class="read-more" href="net-worth-patrimonio.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="plan-financiero-anual.html">Cómo crear un plan financiero anual</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 16_01_19.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · plan financiero, presupuesto, objetivos</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Organiza objetivos, fechas de gastos y revisiones trimestrales en un plan que puedas actualizar cuando cambien tus circunstancias.</p>
 <a class="read-more" href="plan-financiero-anual.html">Leer artículo →</a>
 </article><article>
 <h3><a class="post-title" href="educacion-financiera-familia.html">Educación financiera en familia: hábitos para el día a día</a></h3>
 <img class="post-image" src="ChatGPT Image 14 ago 2026, 16_20_16.png" alt="Imagen de educación financiera" loading="lazy">
 
 <p class="meta">Guía de educación financiera · educación financiera, familia, ahorro</p>
-<p>Contenido educativo y práctico para comprender mejor este tema, organizar tus finanzas y tomar decisiones con mayor información.</p>
+<p>Ideas por edades para hablar de prioridades, ahorro, precios y decisiones familiares sin convertir el dinero en un tabú.</p>
 <a class="read-more" href="educacion-financiera-familia.html">Leer artículo →</a>
 </article></div>
 </section>
@@ -211,12 +225,13 @@
 <div><h3><a href="privacidad.html">Privacidad</a></h3><p>Consulta cómo tratamos la información y la privacidad.</p></div>
 <div><h3><a href="cookies.html">Cookies</a></h3><p>Información sobre el uso de cookies en el sitio.</p></div>
 <div><h3><a href="aviso-legal.html">Aviso legal</a></h3><p>Condiciones y aspectos legales del sitio.</p></div>
+<div><h3><a href="terminos.html">Términos y condiciones</a></h3><p>Condiciones de uso del contenido y del sitio.</p></div>
 </div>
 </section>
 </div>
 <footer>
 <p><strong>Finanzas al Día</strong> — información y educación financiera.</p>
-<p><a href="privacidad.html">Privacidad</a> | <a href="cookies.html">Cookies</a> | <a href="aviso-legal.html">Aviso legal</a> | <a href="contacto.html">Contacto</a></p>
+<p><a href="privacidad.html">Privacidad</a> | <a href="cookies.html">Cookies</a> | <a href="aviso-legal.html">Aviso legal</a> | <a href="terminos.html">Términos</a> | <a href="contacto.html">Contacto</a></p>
 <p>© 2026 Finanzas al Día. Todos los derechos reservados.</p>
 </footer>
 </body></html>
