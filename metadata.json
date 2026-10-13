@@ -1,0 +1,6 @@
+{
+  "name": "Tecnoteke - Portal Tecnológico y Guías Dev",
+  "description": "Plataforma editorial sobre Inteligencia Artificial, desarrollo de software, ciberseguridad y arquitectura cloud por Andrés Martínez.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
