@@ -1,0 +1,30 @@
+# ==============================================================================
+# Thread & Petal (https://4kt.lat/) — Netlify Route Mapping & Error Handling
+# ==============================================================================
+# 1. Non-trailing slash aliases for Institutional & Legal pages
+/about                              /about/index.html                           200
+/contact                            /contact/index.html                         200
+/editorial-policy                   /editorial-policy/index.html                200
+/privacy-policy                     /privacy-policy/index.html                  200
+/cookie-policy                      /cookie-policy/index.html                   200
+/sitemap                            /sitemap/index.html                         200
+
+# 2. Non-trailing slash aliases for Editorial Categories
+/category/sewing-basics             /category/sewing-basics/index.html          200
+/category/clothing-repair           /category/clothing-repair/index.html        200
+/category/patterns-projects         /category/patterns-projects/index.html      200
+/category/fabric-crafts             /category/fabric-crafts/index.html          200
+/category/floral-fabric-art         /category/floral-fabric-art/index.html      200
+
+# 3. Non-trailing slash aliases for the 8 Published Articles
+/how-to-sew-a-button-by-hand        /how-to-sew-a-button-by-hand/index.html     200
+/repair-small-hole-t-shirt          /repair-small-hole-t-shirt/index.html       200
+/hem-pants-without-sewing-machine   /hem-pants-without-sewing-machine/index.html 200
+/measure-yourself-sewing-patterns   /measure-yourself-sewing-patterns/index.html 200
+/make-fabric-flowers                /make-fabric-flowers/index.html             200
+/repair-loose-seam                  /repair-loose-seam/index.html               200
+/choose-sewing-needle               /choose-sewing-needle/index.html            200
+/sew-fabric-tote-bag                /sew-fabric-tote-bag/index.html             200
+
+# 4. Unknown routes return true HTTP 404 status (eliminating soft 404 issues in GSC)
+/*                                  /404.html                                   404

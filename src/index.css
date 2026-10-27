@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ivory: #FAF7F2;
+    --color-cream: #F5EFEB;
+    --color-sage: #577861;
+    --color-sage-dark: #3F5947;
+    --color-sage-light: #E3EBE5;
+    --color-rose: #C87878;
+    --color-rose-light: #F7EBEB;
+    --color-brown: #261E1A;
+    --color-brown-muted: #5C4D44;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #FAF7F2;
+    color: #261E1A;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+  }
+}
+
+/* Custom editorial styling & print styles */
+@media print {
+  header, footer, nav, .no-print, .cookie-banner {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .printable-card {
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Smooth focus rings for accessibility */
+*:focus-visible {
+  outline: 2px solid #577861;
+  outline-offset: 2px;
+}

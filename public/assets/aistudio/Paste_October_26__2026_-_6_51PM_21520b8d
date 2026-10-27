@@ -1,0 +1,844 @@
+# PROYECTO: RECONSTRUCCIÓN COMPLETA DE 4KT.LAT — THREAD & PETAL
+
+## 1. TU ROL
+
+Actúa como un equipo profesional compuesto por:
+
+- Un desarrollador frontend senior especializado en React, Vite y TypeScript.
+- Un diseñador UI/UX especializado en revistas digitales y blogs editoriales.
+- Un especialista en SEO técnico y Google Search Console.
+- Un editor especializado en tutoriales de costura, reparación de ropa y manualidades textiles.
+- Un especialista en integración técnica de Google AdSense.
+- Un ingeniero de calidad responsable de ejecutar pruebas y verificar el proyecto antes de entregarlo.
+
+Tu misión es reconstruir completamente mi sitio web desde cero, con una arquitectura profesional, una identidad visual propia, contenido editorial útil en inglés y una implementación técnica correcta.
+
+No quiero una simple plantilla, una demostración visual ni una página de inicio vacía.
+
+Quiero un proyecto funcional, organizado, responsive, optimizado para buscadores y preparado para que pueda publicarse en mi dominio existente.
+
+IMPORTANTE: no puedes garantizar la aprobación de Google AdSense. Tu trabajo consiste en crear un sitio de calidad, cumplir los requisitos técnicos aplicables y evitar problemas conocidos de contenido superficial, navegación y configuración.
+
+## 2. INFORMACIÓN DEL PROYECTO
+
+Dominio principal:
+https://4kt.lat/
+
+Nombre de la marca:
+Thread & Petal
+
+Descripción editorial:
+Practical Sewing, Clothing Repair & Fabric Crafts.
+
+Idioma principal:
+Inglés estadounidense (en-US).
+
+Responsable del sitio:
+Andres Martinez
+
+Correo de contacto:
+andresy1999@gmail.com
+
+Tecnologías preferidas:
+- React.
+- Vite.
+- TypeScript.
+- HTML5 semántico.
+- CSS moderno.
+- React Router, si se necesita para el enrutamiento.
+
+Hosting:
+Netlify.
+
+Repositorio:
+El repositorio de GitHub ya existe, está conectado a Netlify y actualmente está limpio. Debes generar un proyecto nuevo que pueda incorporarse al repositorio y desplegarse correctamente.
+
+No cambies el dominio principal.
+
+No migres a otro dominio.
+
+No conserves la temática, los artículos ni los componentes de la antigua web si no son necesarios.
+
+Puedes utilizar una arquitectura nueva, pero debes mantener el proyecto sencillo de instalar, ejecutar, mantener y actualizar.
+
+## 3. OBJETIVO EDITORIAL
+
+Construye una revista digital especializada en:
+
+- Sewing for beginners.
+- Clothing repair.
+- Basic garment alterations.
+- Sewing patterns and practical projects.
+- Fabric crafts.
+- Handmade fabric flowers.
+- Textile decoration.
+
+El objetivo es ayudar a personas reales a aprender técnicas de costura, reparar ropa, realizar proyectos textiles y resolver problemas cotidianos.
+
+La temática debe ser coherente en todo el sitio.
+
+NO mezcles artículos de tecnología, criptomonedas, noticias generales, bodas, finanzas, salud o temas ajenos a esta especialidad.
+
+No cambies de nicho dentro del proyecto.
+
+No crees contenido únicamente para insertar palabras clave o aumentar artificialmente el número de páginas.
+
+Cada artículo debe tener un propósito claro y resolver una necesidad concreta.
+
+## 4. IDENTIDAD VISUAL Y DISEÑO
+
+Diseña una revista digital elegante, acogedora, moderna y editorial.
+
+Utiliza como inspiración estructural el concepto de una revista especializada con:
+
+- Cabecera centrada.
+- Logotipo y nombre de la marca.
+- Menú horizontal.
+- Introducción editorial.
+- Sección de últimas publicaciones.
+- Tarjetas con imágenes.
+- Artículos destacados.
+- Categorías.
+- Pie de página completo.
+
+No copies literalmente ningún sitio existente.
+
+La identidad visual debe ser original.
+
+### Paleta de colores
+
+Utiliza una combinación equilibrada de:
+
+- Marfil o blanco cálido como fondo.
+- Verde salvia como color secundario.
+- Rosa empolvado para detalles.
+- Marrón oscuro para títulos y textos.
+- Verde oscuro para botones y enlaces destacados.
+
+Evita los colores excesivamente saturados, las animaciones innecesarias y los degradados llamativos.
+
+### Tipografía
+
+Combina una tipografía editorial elegante para los títulos con una tipografía sans serif muy legible para el contenido.
+
+Asegura una jerarquía visual clara entre H1, H2, H3, texto normal, metadatos y botones.
+
+### Cabecera
+
+Debe incluir:
+
+- Logotipo original y ligero.
+- Nombre Thread & Petal.
+- Una descripción breve de la publicación.
+- Navegación principal.
+- Menú móvil funcional.
+- Acceso visible a la búsqueda de artículos, si implementas esa función.
+
+La cabecera debe verse profesional en escritorio, tabletas y móviles.
+
+### Página de inicio
+
+Organiza la portada en este orden:
+
+1. Cabecera.
+2. Navegación.
+3. Bloque editorial principal.
+4. Introducción original sobre la misión del sitio.
+5. Artículos destacados.
+6. Últimos tutoriales.
+7. Navegación por categorías.
+8. Sección de proyectos para principiantes.
+9. Presentación del responsable editorial.
+10. Pie de página con enlaces útiles y legales.
+
+No coloques grandes bloques vacíos para simular que existe más contenido.
+
+No utilices imágenes decorativas que no tengan relación con los artículos.
+
+No uses tarjetas con títulos sin contenido detrás.
+
+## 5. ESTRUCTURA DE NAVEGACIÓN
+
+Crea las siguientes categorías:
+
+1. Sewing Basics
+2. Clothing Repair
+3. Patterns & Projects
+4. Fabric Crafts
+5. Floral Fabric Art
+
+Incluye también estas páginas:
+
+- Home.
+- About Us.
+- Contact.
+- Privacy Policy.
+- Cookie Policy, cuando corresponda.
+- Editorial Policy.
+- Sitemap HTML, si resulta útil para la navegación.
+- Página 404 personalizada.
+
+Las páginas legales deben estar redactadas de manera clara y adecuada al funcionamiento real del sitio.
+
+No inventes empresas, direcciones físicas, teléfonos, empleados, credenciales profesionales ni certificaciones.
+
+No afirmes que existen políticas, herramientas o procedimientos que realmente no se hayan implementado.
+
+No crees páginas legales con contenido vacío o una sola frase.
+
+## 6. DATOS DEL RESPONSABLE
+
+Utiliza estos datos exactamente:
+
+Nombre: Andres Martinez
+
+Correo: andresy1999@gmail.com
+
+En la página About Us, presenta la publicación como un proyecto editorial especializado en tutoriales prácticos de costura, reparación de ropa y manualidades textiles.
+
+Explica qué tipo de contenido publica el sitio, cómo pretende ayudar a los lectores y qué pueden esperar de sus guías.
+
+No inventes una biografía personal, una trayectoria profesional, años de experiencia, títulos académicos ni experiencias de costura que no hayan sido proporcionadas.
+
+Si necesitas explicar cómo se produce el contenido, utiliza una política editorial que pueda cumplirse realmente.
+
+Incluye el correo de contacto como enlace funcional:
+
+mailto:andresy1999@gmail.com
+
+No muestres datos personales adicionales.
+
+## 7. CONTENIDO EDITORIAL ORIGINAL
+
+La calidad del contenido es una prioridad absoluta.
+
+Crea un conjunto inicial de tutoriales completos, originales, útiles y relacionados con la temática.
+
+No quiero 30 artículos generados automáticamente que repitan la misma estructura sin aportar información.
+
+Prefiero menos artículos, pero bien elaborados, que una gran cantidad de páginas superficiales.
+
+Desarrolla inicialmente los siguientes temas:
+
+### Artículo 1
+Title: How to Sew a Button by Hand: A Step-by-Step Guide
+
+Debe incluir:
+- Introducción.
+- Materiales necesarios.
+- Preparación de la aguja y el hilo.
+- Instrucciones paso a paso.
+- Cómo colocar correctamente el botón.
+- Cómo asegurar el hilo.
+- Errores frecuentes.
+- Solución de problemas.
+- Preguntas frecuentes útiles.
+- Consejos para obtener un resultado duradero.
+
+### Artículo 2
+Title: How to Repair a Small Hole in a T-Shirt
+
+Debe incluir:
+- Cómo evaluar el daño.
+- Materiales necesarios.
+- Diferencias entre agujeros pequeños y desgarros.
+- Instrucciones de reparación.
+- Cómo elegir un hilo adecuado.
+- Cómo evitar que la tela se deforme.
+- Cuándo conviene utilizar un parche.
+- Errores que deben evitarse.
+
+### Artículo 3
+Title: How to Hem Pants Without a Sewing Machine
+
+Debe incluir:
+- Cómo medir el largo.
+- Cómo marcar el dobladillo.
+- Materiales necesarios.
+- Métodos de costura manual.
+- Cómo fijar el dobladillo.
+- Cómo comprobar la longitud.
+- Consejos para diferentes tejidos.
+- Limitaciones de los métodos sin máquina.
+
+### Artículo 4
+Title: How to Measure Yourself for Sewing Patterns
+
+Debe incluir:
+- Cinta métrica y preparación.
+- Medidas corporales principales.
+- Cómo medir el pecho, la cintura y la cadera.
+- Cómo registrar las medidas.
+- Errores de medición.
+- Diferencia entre medidas corporales y medidas de la prenda terminada.
+- Cómo comparar las medidas con una tabla de tallas.
+- Recomendaciones para obtener medidas consistentes.
+
+### Artículo 5
+Title: How to Make Fabric Flowers for Clothing and Accessories
+
+Debe incluir:
+- Materiales.
+- Selección de telas.
+- Preparación de las piezas.
+- Métodos de montaje.
+- Fijación de las flores.
+- Opciones para decorar prendas y accesorios.
+- Consejos de acabado.
+- Errores frecuentes.
+
+### Artículo 6
+Title: How to Repair a Loose Seam in Your Clothes
+
+Debe incluir:
+- Cómo identificar una costura descosida.
+- Cómo evaluar el estado del tejido.
+- Materiales.
+- Reparación manual.
+- Refuerzo de la costura.
+- Cómo evitar que vuelva a abrirse.
+- Cuándo se necesita una reparación más compleja.
+
+### Artículo 7
+Title: How to Choose the Right Sewing Needle for Different Fabrics
+
+Debe incluir:
+- Tipos de agujas.
+- Diferencias entre agujas para tejidos ligeros y gruesos.
+- Compatibilidad entre aguja, hilo y tela.
+- Señales de que una aguja no es adecuada.
+- Recomendaciones prácticas.
+- Precauciones al manipular agujas.
+
+### Artículo 8
+Title: How to Sew a Simple Fabric Tote Bag
+
+Debe incluir:
+- Lista de materiales.
+- Herramientas.
+- Preparación y corte de las piezas.
+- Ensamblaje.
+- Costura de las asas.
+- Acabado de las costuras.
+- Revisión del resultado.
+- Errores frecuentes.
+
+### Requisitos comunes de los artículos
+
+Cada tutorial debe:
+
+- Estar escrito en inglés natural.
+- Tener un título descriptivo y específico.
+- Resolver una intención de búsqueda concreta.
+- Incluir una introducción útil.
+- Explicar materiales y herramientas.
+- Presentar instrucciones detalladas y ordenadas.
+- Incluir consejos prácticos que no sean simples repeticiones.
+- Incorporar errores frecuentes y soluciones cuando sean pertinentes.
+- Contener preguntas frecuentes relevantes, sin inventar preguntas solo para añadir texto.
+- Incluir enlaces internos contextuales.
+- Incorporar una imagen pertinente cuando aporte valor.
+- Tener un diseño de lectura cómodo.
+- Incluir una fecha real de publicación o actualización cuando corresponda.
+- Evitar afirmaciones no verificadas.
+- Evitar repeticiones innecesarias.
+- Evitar párrafos genéricos que podrían aparecer en cualquier web.
+
+No establezcas una extensión artificial para todos los artículos. Escribe lo que cada tutorial necesite para explicar correctamente el procedimiento.
+
+No inventes resultados de pruebas, experiencias personales ni testimonios.
+
+No copies artículos de otras páginas.
+
+No simules que se ha realizado un proyecto real si no se ha proporcionado evidencia de ello.
+
+Si una fotografía original no está disponible, utiliza una imagen con licencia adecuada y verifica las condiciones de uso. No presentes una fotografía de archivo como si fuera una prueba de un proyecto realizado personalmente.
+
+No inventes autores, reseñas ni puntuaciones de usuarios.
+
+## 8. IMÁGENES
+
+Las imágenes deben estar relacionadas directamente con el tema de cada artículo.
+
+Prioriza imágenes originales que se puedan incorporar legítimamente al proyecto.
+
+Si utilizas imágenes externas:
+
+- Comprueba su licencia.
+- Conserva la atribución cuando sea obligatoria.
+- Evita imágenes con marcas de agua.
+- No descargues imágenes de otros blogs para reutilizarlas sin permiso.
+- Optimiza su tamaño.
+- Utiliza formatos modernos cuando sean apropiados.
+- Define dimensiones para evitar saltos de diseño.
+- Incluye textos alternativos descriptivos.
+
+No utilices la misma imagen genérica en todos los artículos.
+
+No generes URLs de imágenes inexistentes.
+
+Si una imagen no está disponible, el componente debe mostrar un recurso alternativo local que exista.
+
+## 9. ESTRUCTURA DE URLS
+
+Utiliza URLs descriptivas, permanentes y legibles.
+
+Ejemplos:
+
+/
+ /about/
+ /contact/
+ /privacy-policy/
+ /cookie-policy/
+ /editorial-policy/
+ /category/sewing-basics/
+ /category/clothing-repair/
+ /category/patterns-projects/
+ /category/fabric-crafts/
+ /category/floral-fabric-art/
+ /how-to-sew-a-button-by-hand/
+ /repair-small-hole-t-shirt/
+ /hem-pants-without-sewing-machine/
+ /measure-yourself-sewing-patterns/
+ /make-fabric-flowers/
+ /repair-loose-seam/
+ /choose-sewing-needle/
+ /sew-fabric-tote-bag/
+
+Las URLs anteriores son ejemplos de rutas deseadas.
+
+Asegúrate de que las rutas reales coincidan exactamente con los enlaces internos, los datos de los artículos y el sitemap.
+
+No uses URLs con fragmentos como #/article/slug.
+
+No crees enlaces a páginas que no existen.
+
+No generes páginas vacías para simular categorías con contenido.
+
+## 10. SEO TÉCNICO
+
+Implementa una configuración SEO completa y verificable.
+
+### HTML
+
+- Utiliza HTML semántico.
+- Define correctamente el idioma en inglés.
+- Incluye un único H1 principal por página como criterio editorial.
+- Utiliza H2 y H3 con una jerarquía coherente.
+- Añade títulos únicos y descriptivos.
+- Crea metadescripciones específicas.
+- Configura el atributo lang="en".
+- Evita títulos duplicados.
+- Evita metadescripciones repetidas.
+- Evita contenido oculto destinado a manipular buscadores.
+
+### URLs canónicas
+
+Configura una URL canónica absoluta para cada página indexable.
+
+El dominio canónico será:
+
+https://4kt.lat/
+
+No utilices dominios de prueba, localhost, dominios antiguos ni URLs de Netlify como canónicas de producción.
+
+No apuntes todas las páginas a la página de inicio.
+
+Comprueba que la versión HTTP y las variantes del dominio se comporten de manera coherente con el dominio canónico.
+
+### Sitemap
+
+Genera sitemap.xml con las URLs públicas, válidas y canónicas.
+
+Incluye las páginas editoriales y los artículos publicados.
+
+Incluye las páginas legales cuando corresponda.
+
+No incluyas:
+- Páginas 404.
+- Rutas inexistentes.
+- URLs de prueba.
+- Duplicados.
+- Páginas de administración.
+- URLs con parámetros innecesarios.
+
+No declares una página como publicada si no existe o no es accesible.
+
+### Robots.txt
+
+Crea robots.txt en la raíz pública.
+
+Incluye una referencia al sitemap:
+
+Sitemap: https://4kt.lat/sitemap.xml
+
+No bloquees accidentalmente los recursos necesarios para representar la web.
+
+No bloquees todo el sitio.
+
+No utilices robots.txt para intentar ocultar páginas que deban protegerse mediante mecanismos de acceso adecuados.
+
+### Datos estructurados
+
+Implementa JSON-LD cuando corresponda:
+
+- WebSite.
+- Organization o Person, según la representación que realmente corresponda.
+- BreadcrumbList para páginas con migas de pan.
+- BlogPosting o Article para los artículos.
+
+Los datos estructurados deben coincidir con el contenido visible.
+
+No inventes:
+- Reseñas.
+- Puntuaciones.
+- Fechas.
+- Autores adicionales.
+- Datos de contacto inexistentes.
+- Información empresarial.
+- Premios.
+- Credenciales.
+
+No añadas esquemas que no correspondan al contenido real.
+
+### Enlaces internos
+
+Cada artículo debe enlazar de manera contextual con otros tutoriales pertinentes.
+
+Implementa migas de pan cuando ayuden a la navegación.
+
+Evita enlaces rotos, textos de enlace genéricos en exceso y páginas huérfanas.
+
+### Indexación
+
+No utilices noindex en las páginas editoriales que deban aparecer en Google.
+
+Comprueba que las etiquetas canonical y robots no se contradigan.
+
+La web debe permitir el rastreo público de las páginas que se desee indexar.
+
+## 11. REQUISITOS ESPECÍFICOS PARA REACT Y VITE
+
+Implementa el proyecto teniendo en cuenta que React y Vite generan normalmente una aplicación frontend.
+
+Debes asegurarte de que el contenido se represente correctamente y que las rutas funcionen en producción.
+
+Configura Netlify para que las URLs internas puedan abrirse directamente sin producir errores 404 del servidor.
+
+No confundas una aplicación que funciona al hacer clic desde la portada con una aplicación cuyas rutas funcionan directamente.
+
+Comprueba las rutas individuales en una nueva pestaña.
+
+Evita dependencias innecesarias.
+
+Evita componentes monolíticos.
+
+Separa los componentes reutilizables, los datos editoriales, los estilos y las utilidades.
+
+Incluye un README.md con instrucciones claras para:
+
+- Instalar las dependencias.
+- Ejecutar el proyecto localmente.
+- Construir la versión de producción.
+- Publicar en Netlify.
+- Añadir nuevos artículos.
+- Actualizar los metadatos.
+- Modificar las páginas legales.
+- Comprobar AdSense y ads.txt.
+
+No introduzcas contraseñas, claves privadas ni secretos en el código fuente.
+
+No implementes una base de datos ni un panel administrativo si no son necesarios.
+
+## 12. GOOGLE ADSENSE: INTEGRACIÓN REAL
+
+Mi identificador de editor es:
+
+ca-pub-5714100747253670
+
+Quiero que el proyecto incluya el código oficial de AdSense que proporciono a continuación.
+
+Añade exactamente este fragmento al HTML principal, dentro de la etiqueta <head> de index.html:
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5714100747253670"
+     crossorigin="anonymous"></script>
+
+Requisitos:
+
+- No cambies el identificador de editor.
+- No dupliques el fragmento.
+- No lo insertes repetidamente desde diferentes componentes React.
+- No lo cargues varias veces en cada ruta.
+- No sustituyas el identificador por uno inventado.
+- Comprueba que el código aparezca en el HTML de producción.
+- No utilices métodos de carga que creen ejecuciones duplicadas.
+- Documenta dónde está implementado.
+
+El código de AdSense debe añadirse para la identificación y configuración del sitio, pero no debes afirmar que la cuenta o el dominio ya están aprobados.
+
+No inventes un estado de aprobación.
+
+No intentes eludir una revisión previa.
+
+No simules anuncios para engañar a Google.
+
+No implementes clics artificiales, tráfico automatizado ni incentivos para hacer clic en anuncios.
+
+### Ubicación de anuncios
+
+Prepara componentes reutilizables para anuncios únicamente si son necesarios.
+
+Si todavía no hay aprobación o no se dispone de identificadores de bloques de anuncios, no inventes data-ad-slot.
+
+No coloques bloques publicitarios ficticios ni espacios excesivos que perjudiquen la experiencia de lectura.
+
+Deja documentado que la publicación de anuncios depende del estado de la cuenta, la configuración y las políticas aplicables.
+
+## 13. ARCHIVO ADS.TXT
+
+Crea un archivo de texto plano llamado exactamente:
+
+ads.txt
+
+Su ubicación debe permitir acceder al archivo mediante:
+
+https://4kt.lat/ads.txt
+
+El contenido debe ser exactamente:
+
+google.com, pub-5714100747253670, DIRECT, f08c47fec0942fa0
+
+No lo llames adx.txt.
+
+No lo llames ads.txt.txt.
+
+No lo coloques en una carpeta inaccesible.
+
+No incluyas HTML, etiquetas <script>, comentarios innecesarios ni formato JSON.
+
+En un proyecto Vite, utiliza la carpeta pública correspondiente para que el archivo se copie a la raíz del directorio de producción.
+
+Comprueba que el archivo se incluya en la compilación final.
+
+Explica en el README cómo verificar que el archivo se encuentra publicado en la URL indicada.
+
+No afirmes que el archivo ha sido reconocido por Google hasta que exista una comprobación real.
+
+## 14. PÁGINAS LEGALES Y PRIVACIDAD
+
+Implementa una página Privacy Policy completa y coherente con las funciones reales del sitio.
+
+Debe contemplar, según corresponda:
+
+- Datos de navegación.
+- Cookies y tecnologías similares.
+- Servicios de terceros.
+- Google AdSense.
+- Personalización y medición publicitaria.
+- Información sobre el uso de datos.
+- Formas de contacto relacionadas con la privacidad.
+- Actualizaciones de la política.
+
+No afirmes que el sitio utiliza una herramienta de consentimiento específica si no está instalada.
+
+No afirmes que no se recogen datos si existen formularios, herramientas o servicios que puedan procesarlos.
+
+No inventes una dirección postal ni un representante legal.
+
+Si implementas un aviso de cookies o una plataforma de consentimiento, debe funcionar de verdad y configurarse de acuerdo con los requisitos aplicables a los usuarios y regiones correspondientes.
+
+No implementes un botón que diga que acepta las cookies sin que ese botón tenga un comportamiento real.
+
+No bloquees funcionalidades esenciales innecesariamente.
+
+Añade una página Contact con el correo:
+
+andresy1999@gmail.com
+
+Si implementas un formulario de contacto, no simules el envío exitoso de mensajes cuando no exista un backend o servicio de envío funcional.
+
+## 15. EXPERIENCIA DE USUARIO Y ACCESIBILIDAD
+
+La web debe ser completamente responsive.
+
+Comprueba como mínimo:
+
+- Móvil de aproximadamente 360 px de ancho.
+- Móvil de aproximadamente 390 px de ancho.
+- Tableta.
+- Escritorio de 1366 px.
+- Escritorio de 1920 px.
+
+Evita:
+- Desbordamiento horizontal.
+- Texto demasiado pequeño.
+- Contraste insuficiente.
+- Menús que no funcionan.
+- Botones sin acciones.
+- Tarjetas que parecen enlaces, pero no lo son.
+- Imágenes deformadas.
+- Formularios sin etiquetas.
+- Elementos interactivos inaccesibles con teclado.
+
+Incluye estados de foco visibles, etiquetas accesibles y una estructura semántica coherente.
+
+## 16. RENDIMIENTO
+
+Optimiza la web para ofrecer una experiencia rápida.
+
+Implementa cuando corresponda:
+
+- Imágenes optimizadas.
+- Lazy loading para imágenes que no sean críticas.
+- Dimensiones explícitas para las imágenes.
+- CSS organizado.
+- Dependencias razonables.
+- Fuentes correctamente cargadas.
+- Eliminación de recursos innecesarios.
+- Prevención de errores en consola.
+- Prevención de solicitudes a recursos inexistentes.
+
+No sacrifiques la legibilidad ni la calidad editorial por perseguir una puntuación artificial.
+
+Si puedes ejecutar Lighthouse, registra los resultados reales.
+
+No inventes puntuaciones de rendimiento.
+
+## 17. CONTROL DE CALIDAD OBLIGATORIO
+
+Antes de entregar el proyecto:
+
+1. Instala o verifica las dependencias.
+2. Ejecuta el proceso de compilación.
+3. Corrige los errores de TypeScript.
+4. Corrige los errores de compilación.
+5. Ejecuta las pruebas disponibles.
+6. Comprueba las rutas internas.
+7. Comprueba que todos los enlaces principales funcionen.
+8. Comprueba las imágenes.
+9. Comprueba que los artículos tengan contenido real.
+10. Comprueba que las páginas legales se abran correctamente.
+11. Comprueba que no existan títulos duplicados importantes.
+12. Comprueba las etiquetas canonical.
+13. Comprueba el sitemap.xml.
+14. Comprueba robots.txt.
+15. Comprueba que ads.txt se copie a la raíz de producción.
+16. Comprueba que el fragmento de AdSense esté implementado una sola vez.
+17. Comprueba que la configuración de Netlify no provoque errores al abrir rutas directamente.
+18. Comprueba que no queden referencias a la antigua temática.
+19. Comprueba que no existan enlaces a localhost.
+20. Comprueba que no haya datos ficticios presentados como reales.
+
+No declares que una prueba se ha ejecutado si no la has ejecutado.
+
+Si una comprobación requiere acceso externo, indícalo claramente.
+
+## 18. ESTRUCTURA DE ARCHIVOS
+
+Organiza el proyecto con una estructura clara.
+
+Puedes utilizar una estructura similar a:
+
+/
+├── public/
+│   ├── ads.txt
+│   ├── robots.txt
+│   ├── favicon.svg
+│   └── images/
+├── src/
+│   ├── components/
+│   ├── layouts/
+│   ├── pages/
+│   ├── articles/
+│   ├── data/
+│   ├── styles/
+│   ├── utils/
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+├── netlify.toml
+├── sitemap.xml
+└── README.md
+
+Adapta esta estructura a las necesidades reales del proyecto.
+
+No crees carpetas vacías sin utilidad.
+
+Asegúrate de que el sitemap y los archivos públicos terminen en el lugar correcto después de ejecutar la compilación.
+
+Si utilizas React Router, configura las redirecciones necesarias para las rutas públicas.
+
+## 19. ENTREGA FINAL
+
+Quiero que entregues un proyecto completo que pueda descargar como ZIP e incorporar a mi repositorio de GitHub.
+
+El ZIP debe contener todos los archivos necesarios para instalar, compilar y publicar la web.
+
+No incluyas:
+- node_modules.
+- Archivos temporales innecesarios.
+- Cachés.
+- Credenciales.
+- Archivos de prueba que no correspondan al proyecto final.
+
+Incluye el código fuente, los artículos, las imágenes autorizadas, los archivos públicos, la configuración y la documentación.
+
+Al finalizar, proporciona un informe breve con:
+
+1. Nombre de la marca.
+2. Resumen de la estructura.
+3. Número de artículos realmente creados.
+4. Páginas implementadas.
+5. Tecnologías utilizadas.
+6. Configuración de AdSense.
+7. Ubicación de ads.txt.
+8. Resultado real de la compilación.
+9. Pruebas ejecutadas y resultados.
+10. Problemas pendientes.
+11. Instrucciones para desplegar en Netlify.
+12. Lista de comprobaciones que todavía deben realizarse en Google Search Console y AdSense.
+
+No afirmes que el sitio está aprobado por AdSense.
+
+No afirmes que está indexado sin comprobarlo.
+
+No afirmes que el dominio fue revisado por Google.
+
+No garantices una aprobación futura.
+
+## 20. ORDEN DE EJECUCIÓN
+
+Trabaja en este orden:
+
+FASE 1: crear la arquitectura y la identidad visual.
+
+FASE 2: construir la portada, navegación, categorías y páginas editoriales.
+
+FASE 3: desarrollar los artículos iniciales con contenido útil.
+
+FASE 4: implementar el SEO técnico.
+
+FASE 5: integrar AdSense y ads.txt.
+
+FASE 6: configurar Netlify.
+
+FASE 7: ejecutar pruebas y corregir errores.
+
+FASE 8: generar el ZIP final y el informe de entrega.
+
+No detengas el trabajo después de crear la portada.
+
+No entregues una plantilla con textos de ejemplo como si estuviera terminada.
+
+No reemplaces contenido útil por párrafos genéricos.
+
+No inventes resultados de pruebas.
+
+Si existe una limitación técnica que impida completar una función, documenta el problema y entrega la mejor implementación funcional posible sin ocultar la limitación.
+
+RESULTADO ESPERADO:
+
+Una revista digital en inglés llamada Thread & Petal, publicada en https://4kt.lat/, especializada en costura, reparación de ropa y manualidades textiles, con estructura editorial profesional, contenido original, navegación funcional, SEO técnico, integración correcta del código de AdSense, archivo ads.txt válido y proyecto preparado para desplegarse mediante GitHub y Netlify.

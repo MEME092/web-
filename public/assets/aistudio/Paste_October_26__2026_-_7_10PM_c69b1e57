@@ -1,0 +1,970 @@
+# RECONSTRUCCIÓN PROFESIONAL DE THREAD & PETAL
+## Convertir una maqueta en una revista digital completa, visual y funcional
+
+### 1. TU MISIÓN
+
+Actúa como desarrollador frontend senior, diseñador editorial, fotógrafo especializado en contenido para blogs, editor profesional en inglés y especialista en SEO técnico y Google AdSense.
+
+Debes trabajar sobre el proyecto EXISTENTE de Thread & Petal, cuyo dominio de producción es:
+
+https://4kt.lat/
+
+He detectado que la versión actual tiene una estructura básica, componentes y contenido editorial, pero todavía parece una maqueta.
+
+El problema principal es que faltan fotografías relevantes, la portada tiene elementos visuales genéricos y necesito que los artículos se presenten como tutoriales editoriales completos, no como páginas de demostración.
+
+**NO QUIERO QUE CREES OTRA MAQUETA. QUIERO QUE COMPLETES Y MEJORES EL PROYECTO REAL.**
+
+Debes inspeccionar primero los archivos existentes, comprender su arquitectura y conservar todos los componentes que funcionen correctamente.
+
+No elimines los artículos existentes para sustituirlos por textos de ejemplo.
+
+No reconstruyas innecesariamente el proyecto desde cero.
+
+No me entregues una portada bonita con artículos incompletos.
+
+El resultado debe ser un sitio web editorial real, con contenido desarrollado, fotografías pertinentes, navegación funcional, páginas completas y una identidad visual coherente.
+
+---
+
+# 2. IDENTIDAD DEFINITIVA DEL SITIO
+
+Nombre: Thread & Petal
+
+Dominio principal: https://4kt.lat/
+
+Idioma: inglés estadounidense.
+
+Responsable editorial: Andres Martinez.
+
+Correo: andresy1999@gmail.com
+
+Temática:
+
+- Sewing tutorials.
+- Clothing repair.
+- Garment alterations.
+- Sewing patterns and projects.
+- Fabric crafts.
+- Handmade fabric flowers.
+
+Descripción de la marca:
+
+Thread & Petal is an independent digital publication focused on practical sewing tutorials, clothing repair, garment alterations, and creative fabric crafts for everyday life.
+
+La web debe transmitir creatividad, confianza, utilidad, calidad editorial y atención al detalle.
+
+Todo el contenido visible para el visitante debe estar escrito en inglés natural.
+
+No muestres textos de interfaz en español.
+
+No cambies el dominio ni el identificador de AdSense.
+
+---
+
+# 3. PRIMERA TAREA: AUDITAR EL PROYECTO ACTUAL
+
+Antes de modificar archivos, inspecciona la estructura existente.
+
+Presta especial atención a:
+
+- src/data/articles.ts
+- src/data/categories.ts
+- src/components/ArticleCard.tsx
+- src/components/ArticleIllustration.tsx
+- src/components/Header.tsx
+- src/components/Footer.tsx
+- src/components/SEOHead.tsx
+- src/pages/HomePage.tsx
+- src/pages/ArticlePage.tsx
+- src/pages/CategoryPage.tsx
+- src/pages/AboutPage.tsx
+- src/pages/ContactPage.tsx
+- src/pages/EditorialPolicyPage.tsx
+- src/pages/PrivacyPolicyPage.tsx
+- src/pages/CookiePolicyPage.tsx
+- src/App.tsx
+- src/index.css
+- index.html
+- public/ads.txt
+- public/robots.txt
+- public/sitemap.xml
+- netlify.toml
+- package.json
+
+Identifica qué contenido existe, qué imágenes están disponibles y qué componentes solo muestran elementos decorativos.
+
+Conserva los artículos que ya estén desarrollados y sean aprovechables.
+
+Revisa si los pasos de los artículos son suficientemente detallados y si los materiales, las herramientas, las imágenes y las instrucciones corresponden al tema.
+
+Si encuentras información repetitiva, afirmaciones sin fundamento o instrucciones dudosas, corrígelas.
+
+No afirmes que un tutorial ha sido probado personalmente si no existe evidencia de ello.
+
+No inventes experiencias profesionales del responsable editorial.
+
+---
+
+# 4. DISEÑO VISUAL: DEBE PARECER UNA REVISTA REAL
+
+La portada actual necesita una transformación visual importante.
+
+Quiero una estética editorial inspirada en revistas especializadas de costura, diseño textil y manualidades.
+
+No quiero que todas las secciones parezcan tarjetas de un dashboard de software.
+
+No quiero grandes espacios vacíos, iconos genéricos utilizados como sustitutos de fotografías ni ilustraciones abstractas que no expliquen nada.
+
+## Paleta visual
+
+Utiliza:
+
+- Fondo marfil cálido.
+- Verde salvia.
+- Verde oscuro para botones y enlaces importantes.
+- Rosa empolvado para pequeños detalles.
+- Marrón oscuro para los títulos.
+- Blanco para los bloques de lectura.
+
+Mantén una identidad visual consistente.
+
+## Cabecera
+
+Diseña una cabecera editorial elegante que incluya:
+
+1. Logotipo de Thread & Petal.
+2. Nombre de la publicación.
+3. Lema breve.
+4. Menú principal.
+5. Navegación móvil funcional.
+6. Buscador de artículos funcional.
+
+La cabecera debe ocupar una proporción razonable de la pantalla.
+
+No debe ser excesivamente alta ni desplazar demasiado abajo los artículos.
+
+## Menú principal
+
+Utiliza estas opciones:
+
+- Home
+- Sewing Basics
+- Clothing Repair
+- Patterns & Projects
+- Fabric Crafts
+- Floral Fabric Art
+- About
+
+Añade Contact y las páginas legales en el pie de página.
+
+Cada enlace debe llevar a una página real.
+
+No dejes enlaces decorativos sin funcionalidad.
+
+---
+
+# 5. PORTADA COMPLETA Y EDITORIAL
+
+Rediseña src/pages/HomePage.tsx.
+
+La portada debe contener las siguientes secciones, en este orden:
+
+## A. Bloque editorial principal
+
+Incluye una imagen fotográfica de alta calidad que represente la costura y las manualidades textiles.
+
+Puede mostrar, por ejemplo:
+
+- Una mesa de costura organizada.
+- Telas de diferentes texturas.
+- Hilos y agujas.
+- Una máquina de coser.
+- Manos trabajando sobre una prenda.
+- Flores textiles terminadas.
+
+La imagen debe ser auténtica, pertinente y visualmente atractiva.
+
+No uses un simple icono de una flor como imagen principal.
+
+Sobre o junto a la fotografía, coloca un título editorial:
+
+"Make, Mend & Create Something Beautiful"
+
+Añade una introducción original en inglés que explique qué ofrece Thread & Petal.
+
+Incluye un botón funcional:
+
+"Explore Sewing Guides"
+
+Debe llevar a una sección real de artículos.
+
+## B. Featured Guides
+
+Crea una sección de artículos destacados.
+
+Muestra entre dos y tres artículos con fotografías reales y relevantes.
+
+Utiliza una composición editorial: una tarjeta principal grande y otras tarjetas secundarias, si el diseño lo permite.
+
+Cada tarjeta debe incluir:
+
+- Fotografía.
+- Categoría.
+- Título.
+- Resumen.
+- Tiempo estimado de lectura.
+- Enlace al artículo.
+
+Las tarjetas deben tener una altura coherente, imágenes bien encuadradas y títulos legibles.
+
+## C. Latest Sewing Guides
+
+Crea una sección de publicaciones recientes.
+
+Muestra los artículos existentes mediante tarjetas con imágenes.
+
+La portada debe mostrar suficiente contenido para que el visitante comprenda de inmediato qué encontrará en el sitio.
+
+Evita que toda la sección esté formada por tarjetas idénticas y genéricas.
+
+Utiliza una cuadrícula editorial de tres columnas en escritorio, dos en tabletas y una en móviles, cuando el espacio disponible lo permita.
+
+## D. Browse by Category
+
+Crea una sección visual para las categorías:
+
+1. Sewing Basics.
+2. Clothing Repair.
+3. Patterns & Projects.
+4. Fabric Crafts.
+5. Floral Fabric Art.
+
+Cada categoría debe tener:
+
+- Imagen pertinente.
+- Nombre.
+- Descripción breve.
+- Enlace a su página correspondiente.
+
+No utilices el mismo icono abstracto para todas las categorías.
+
+## E. Beginner-Friendly Projects
+
+Añade una sección que ayude a los visitantes nuevos a encontrar proyectos sencillos.
+
+Utiliza artículos que existan realmente.
+
+No inventes resultados ni afirmes que un proyecto ha sido probado por el equipo.
+
+## F. About Thread & Petal
+
+Añade una presentación breve de la publicación.
+
+Explica que el sitio se centra en tutoriales prácticos, reparación de prendas y proyectos textiles.
+
+Incluye un enlace a la página About.
+
+No inventes información biográfica sobre Andres Martinez.
+
+## G. Pie de página
+
+Incluye:
+
+- Nombre de la marca.
+- Descripción breve.
+- Enlaces a categorías.
+- About Us.
+- Contact.
+- Privacy Policy.
+- Cookie Policy.
+- Editorial Policy.
+- Sitemap.
+
+Incluye el correo andresy1999@gmail.com.
+
+El pie de página debe verse profesional y estar bien organizado.
+
+---
+
+# 6. FOTOGRAFÍAS REALES Y PERTINENTES
+
+ESTE ES UNO DE LOS CAMBIOS MÁS IMPORTANTES.
+
+Actualmente existen ilustraciones SVG que sirven como diagramas, pero no son suficientes para una revista visual de esta temática.
+
+Debes incorporar fotografías pertinentes en la portada, las tarjetas y los artículos.
+
+## Requisitos de las imágenes
+
+Cada artículo debe tener:
+
+1. Una imagen principal específica del tema.
+2. Imágenes adicionales cuando ayuden a comprender el procedimiento.
+3. Diagramas explicativos cuando sean necesarios.
+4. Textos alternativos descriptivos.
+5. Un tratamiento visual coherente con el diseño.
+
+Las imágenes deben mostrar el objeto del que habla el artículo.
+
+Ejemplos:
+
+- Un tutorial para coser botones debe mostrar un botón, hilo, aguja y una prenda.
+- Una reparación de camiseta debe mostrar una camiseta de punto y el proceso de reparación.
+- Un dobladillo debe mostrar un pantalón, una cinta métrica y el borde de la tela.
+- Un tutorial de flores textiles debe mostrar flores hechas con tela.
+- Un artículo sobre agujas debe mostrar diferentes tipos de agujas de costura.
+- Un proyecto de bolsa de tela debe mostrar una bolsa terminada y los materiales.
+
+No reutilices una fotografía de flores para ilustrar una reparación de ropa.
+
+No utilices una imagen de stock de una máquina de coser para todos los artículos.
+
+No uses emojis, ilustraciones abstractas ni iconos de Lucide como sustitutos de fotografías editoriales.
+
+## Cómo obtener las imágenes
+
+Prioriza este orden:
+
+1. Fotografías originales generadas específicamente para cada tema, cuando la herramienta permita generar y exportar archivos de imagen.
+2. Fotografías propias proporcionadas por el responsable del sitio.
+3. Fotografías de bibliotecas que permitan su uso en la web, verificando la licencia correspondiente.
+
+No simules que una imagen generada demuestra que se ha realizado una reparación real.
+
+No presentes fotografías de archivo como experimentos realizados por el autor.
+
+No descargues imágenes de blogs ajenos sin permiso.
+
+No utilices URLs inventadas.
+
+No utilices imágenes que dependan de enlaces externos inestables cuando sea posible incorporarlas legalmente al proyecto.
+
+Guarda las imágenes locales dentro de public/assets/images/ y utiliza rutas coherentes.
+
+Organiza los recursos con nombres descriptivos.
+
+Por ejemplo:
+
+public/assets/images/sewing-button-guide.webp
+
+public/assets/images/repair-tshirt-hole.webp
+
+public/assets/images/hem-pants-guide.webp
+
+public/assets/images/measure-sewing-pattern.webp
+
+public/assets/images/fabric-flowers-tutorial.webp
+
+public/assets/images/repair-loose-seam.webp
+
+public/assets/images/sewing-needle-guide.webp
+
+public/assets/images/fabric-tote-bag.webp
+
+Estos son nombres de referencia: cada archivo debe existir realmente.
+
+Si no puedes generar o incorporar una fotografía, no inventes el archivo. Informa de la limitación y utiliza únicamente recursos existentes y apropiados.
+
+## Calidad técnica
+
+Optimiza las imágenes para la web.
+
+Utiliza WebP o AVIF cuando sea conveniente.
+
+Define dimensiones para evitar saltos de diseño.
+
+Implementa lazy loading para las imágenes que no sean prioritarias.
+
+No retrases innecesariamente la carga de la imagen principal.
+
+Comprueba que ninguna imagen produzca un error 404.
+
+No dejes imágenes vacías ni espacios de reserva que permanezcan vacíos en producción.
+
+---
+
+# 7. TARJETAS DE ARTÍCULOS
+
+Rediseña src/components/ArticleCard.tsx.
+
+Actualmente, las tarjetas tienen elementos gráficos abstractos que no representan el contenido de cada tutorial.
+
+Elimina ese tratamiento como imagen principal.
+
+Cada tarjeta debe mostrar una fotografía pertinente.
+
+Incluye:
+
+- Imagen.
+- Categoría.
+- Título.
+- Resumen.
+- Tiempo de lectura.
+- Nivel de dificultad, si está definido correctamente.
+- Enlace "Read Guide".
+
+No muestres la etiqueta "Step-by-step verified" si no existe un proceso real de verificación que la justifique.
+
+No inventes puntuaciones ni reseñas.
+
+La tarjeta completa debe tener una jerarquía visual clara y funcionar correctamente en móvil.
+
+Las fotografías deben mantener una proporción consistente sin deformarse.
+
+Utiliza object-fit: cover cuando corresponda y define el punto focal para evitar recortes inadecuados.
+
+---
+
+# 8. PÁGINAS DE ARTÍCULOS: CONTENIDO COMPLETO
+
+Rediseña src/pages/ArticlePage.tsx.
+
+Cada artículo debe sentirse como un tutorial editorial publicado por una revista especializada.
+
+No quiero que parezca una ficha de producto ni un conjunto de tarjetas de una aplicación.
+
+## Estructura obligatoria de cada artículo
+
+### A. Breadcrumbs
+
+Ejemplo:
+
+Home > Clothing Repair > How to Sew a Button by Hand
+
+Los enlaces deben funcionar.
+
+### B. Cabecera editorial
+
+Incluye:
+
+- Categoría.
+- Título.
+- Resumen introductorio.
+- Nombre del responsable editorial.
+- Fecha de publicación real.
+- Fecha de actualización, si corresponde.
+- Tiempo de lectura estimado.
+- Nivel de dificultad, cuando proceda.
+
+No inventes fechas de actualización.
+
+### C. Imagen principal
+
+Muestra una fotografía pertinente y de buena calidad.
+
+Debe tener un tamaño suficiente para destacar visualmente.
+
+No uses un SVG decorativo como sustituto.
+
+Incluye un texto alternativo útil.
+
+### D. Introducción
+
+La introducción debe explicar:
+
+- Qué problema resuelve el tutorial.
+- Para quién está pensado.
+- Qué aprenderá el lector.
+- Qué resultado puede esperar razonablemente.
+
+Evita introducciones repetitivas y frases vacías.
+
+### E. Tabla de contenidos
+
+Si el artículo es suficientemente largo, incorpora una tabla de contenidos con enlaces a sus secciones.
+
+Los enlaces deben llevar al apartado correspondiente.
+
+### F. Materials and Tools
+
+Separa materiales y herramientas.
+
+Utiliza listas legibles.
+
+Explica para qué sirve cada elemento cuando sea útil.
+
+No inventes especificaciones innecesarias.
+
+### G. Preparation
+
+Explica cómo preparar la prenda, el material y el espacio de trabajo.
+
+Añade una imagen si ayuda a comprender la preparación.
+
+### H. Step-by-step instructions
+
+Cada paso debe incluir:
+
+- Número.
+- Título.
+- Instrucciones detalladas.
+- Fotografía específica del procedimiento cuando sea pertinente.
+- Consejo práctico.
+- Punto de comprobación, si aporta valor.
+
+No repitas una misma fotografía en todos los pasos.
+
+Si una fotografía no está disponible, utiliza un diagrama técnico que explique realmente el paso o presenta instrucciones claras sin una imagen engañosa.
+
+### I. Common Mistakes
+
+Explica los errores habituales relacionados con el procedimiento y cómo evitarlos.
+
+No utilices consejos genéricos que no estén relacionados con el artículo.
+
+### J. Troubleshooting
+
+Añade soluciones a problemas concretos que puedan surgir durante el proceso.
+
+### K. Frequently Asked Questions
+
+Incluye preguntas pertinentes y respuestas completas.
+
+No repitas la misma respuesta con palabras diferentes.
+
+### L. Related Guides
+
+Incluye enlaces a artículos relacionados que existan realmente.
+
+No inventes enlaces.
+
+### M. About the Editor
+
+Incluye una presentación breve y discreta de la publicación.
+
+Nombre: Andres Martinez.
+
+Correo: andresy1999f@gmail.com.
+
+No inventes experiencia profesional ni credenciales.
+
+### N. Conclusión
+
+Termina con un resumen útil y una recomendación práctica.
+
+No añadas párrafos vacíos para aumentar la longitud del artículo.
+
+---
+
+# 9. MEJORAR LOS OCHO ARTÍCULOS EXISTENTES
+
+Conserva los artículos que ya existen en src/data/articles.ts.
+
+No los elimines ni los sustituyas por títulos con texto de ejemplo.
+
+Revisa individualmente los siguientes:
+
+1. How to Sew a Button by Hand: A Step-by-Step Guide.
+2. How to Repair a Small Hole in a T-Shirt.
+3. How to Hem Pants Without a Sewing Machine.
+4. How to Measure Yourself for Sewing Patterns.
+5. How to Make Fabric Flowers for Clothing and Accessories.
+6. How to Repair a Loose Seam in Your Clothes.
+7. How to Choose the Right Sewing Needle for Different Fabrics.
+8. How to Sew a Simple Fabric Tote Bag.
+
+Verifica que todos tengan contenido completo.
+
+No des por terminado un artículo solo porque tenga una introducción y una lista de pasos.
+
+Revisa que los pasos sean coherentes, que los materiales correspondan al proyecto y que las instrucciones sean suficientemente específicas para ayudar al lector.
+
+Amplía las secciones que sean demasiado breves.
+
+Elimina redundancias.
+
+Corrige errores gramaticales.
+
+Mejora el inglés para que suene natural y editorial.
+
+Evita crear párrafos largos sin subtítulos.
+
+No utilices una extensión artificial como criterio de calidad.
+
+No inventes fuentes, resultados de pruebas o experiencias personales.
+
+No publiques contenido que no hayas podido completar correctamente como si estuviera terminado.
+
+Si necesitas añadir contenido para que el lector entienda un procedimiento, hazlo.
+
+---
+
+# 10. DIAGRAMAS TÉCNICOS
+
+Conserva los diagramas SVG existentes cuando aporten valor educativo.
+
+Sin embargo, debes distinguir entre:
+
+- Fotografía editorial.
+- Fotografía de un procedimiento.
+- Diagrama técnico.
+- Icono decorativo.
+
+No presentes un diagrama técnico como si fuera una fotografía real.
+
+Los diagramas deben tener textos legibles, proporciones adecuadas y explicaciones comprensibles.
+
+Si un diagrama es demasiado pequeño, confuso o innecesario, corrígelo o sustitúyelo por una explicación más clara.
+
+Los diagramas deben complementar las fotografías, no reemplazarlas en toda la web.
+
+---
+
+# 11. DISEÑO DE LECTURA
+
+El contenido debe ser cómodo de leer.
+
+Utiliza:
+
+- Una columna principal de lectura con ancho adecuado.
+- Tipografía legible.
+- Espaciado suficiente entre párrafos.
+- Subtítulos descriptivos.
+- Listas cuando ayuden a explicar procedimientos.
+- Bloques de consejos con moderación.
+- Imágenes que no desborden el contenido.
+- Enlaces internos claramente identificables.
+
+Evita:
+
+- Párrafos demasiado anchos.
+- Texto diminuto.
+- Exceso de tarjetas dentro de los artículos.
+- Animaciones constantes.
+- Ventanas emergentes intrusivas.
+- Elementos que tapen el contenido.
+- Barras laterales que compriman la lectura.
+- Grandes bloques de publicidad.
+
+El diseño debe dar prioridad al tutorial.
+
+---
+
+# 12. CATEGORÍAS COMPLETAS
+
+Cada categoría debe tener una página real.
+
+Incluye:
+
+- Título.
+- Introducción original.
+- Descripción de la temática.
+- Artículos pertenecientes a esa categoría.
+- Fotografías.
+- Enlaces internos.
+- Metadatos específicos.
+
+No crees categorías vacías.
+
+No incluyas artículos en categorías que no correspondan a su contenido.
+
+Comprueba que la navegación entre portada, categorías y artículos funcione correctamente.
+
+---
+
+# 13. PÁGINAS INSTITUCIONALES
+
+Revisa y completa las siguientes páginas:
+
+## About Us
+
+Explica el propósito editorial de Thread & Petal, sus temas y el tipo de recursos que ofrece.
+
+Incluye a Andres Martinez como responsable editorial, sin inventar credenciales.
+
+## Contact
+
+Incluye el correo:
+
+andresy1999@gmail.com
+
+El enlace de correo debe funcionar.
+
+No simules que un formulario envía mensajes si no existe un mecanismo real de envío.
+
+## Editorial Policy
+
+Explica de manera honesta cómo se prepara el contenido, cómo se corrigen errores y cómo se incorporan fuentes cuando son necesarias.
+
+No afirmes que cada artículo ha sido probado personalmente si eso no puede verificarse.
+
+## Privacy Policy
+
+Explica las prácticas de privacidad que realmente correspondan al sitio y a los servicios que utilice.
+
+Incluye información pertinente sobre Google AdSense y los servicios de terceros.
+
+## Cookie Policy
+
+Debe coincidir con el funcionamiento real de las cookies y las tecnologías de seguimiento del sitio.
+
+No inventes herramientas de consentimiento.
+
+Si existe un aviso de cookies, comprueba que sus botones funcionen realmente.
+
+## Sitemap HTML
+
+Debe mostrar las páginas y los artículos publicados.
+
+No incluyas páginas inexistentes.
+
+---
+
+# 14. GOOGLE ADSENSE
+
+Conserva el identificador de editor existente:
+
+ca-pub-5714100747253670
+
+El código oficial debe permanecer implementado una sola vez en el <head> de index.html:
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5714100747253670"
+     crossorigin="anonymous"></script>
+
+No dupliques el script.
+
+No cambies el identificador.
+
+No inventes identificadores de bloques publicitarios.
+
+No simules que el sitio está aprobado.
+
+No añadas anuncios ficticios.
+
+No coloques grandes espacios vacíos para aparentar que existen anuncios.
+
+Si la cuenta todavía no está aprobada, el contenido debe verse completo y profesional sin depender de la publicidad.
+
+No implementes clics artificiales, tráfico automatizado ni técnicas para eludir la revisión.
+
+El objetivo es preparar un sitio de calidad que pueda ser evaluado conforme a las políticas de Google.
+
+---
+
+# 15. ARCHIVO ADS.TXT
+
+Conserva el archivo:
+
+public/ads.txt
+
+Su contenido debe ser exactamente:
+
+google.com, pub-5714100747253670, DIRECT, f08c47fec0942fa0
+
+No lo renombres.
+
+No lo dupliques innecesariamente.
+
+Comprueba que se copie a la raíz de producción y sea accesible en:
+
+https://4kt.lat/ads.txt
+
+---
+
+# 16. SEO TÉCNICO
+
+Conserva y corrige la configuración SEO existente.
+
+Comprueba:
+
+- Titles únicos.
+- Metadescripciones específicas.
+- URLs canónicas absolutas.
+- Un H1 principal coherente por página.
+- Jerarquía de encabezados.
+- Etiqueta lang="en".
+- Enlaces internos.
+- Breadcrumbs.
+- Open Graph.
+- Metadatos sociales.
+- JSON-LD cuando corresponda.
+- Sitemap XML.
+- Robots.txt.
+- Página 404.
+- Ausencia de enlaces rotos.
+- Ausencia de páginas vacías.
+
+Las URLs canónicas deben utilizar el dominio:
+
+https://4kt.lat/
+
+No apuntes todas las páginas a la portada.
+
+No incluyas URLs inexistentes en el sitemap.
+
+No afirmes que una página está indexada si no has verificado su estado.
+
+No inventes resultados de Google Search Console.
+
+No incluyas datos estructurados que contradigan el contenido visible.
+
+---
+
+# 17. REQUISITOS PARA NETLIFY
+
+El proyecto debe seguir funcionando con React, Vite y TypeScript.
+
+Conserva la configuración de despliegue cuando sea correcta.
+
+Comprueba:
+
+- npm install.
+- npm run lint.
+- npm run build.
+- Carga de recursos locales.
+- Rutas de artículos.
+- Rutas de categorías.
+- Rutas legales.
+- Enlaces directos a páginas internas.
+- Redirecciones de Netlify.
+- Copia de los archivos públicos.
+- Ausencia de errores de consola importantes.
+
+Las páginas deben abrirse correctamente al introducir directamente su URL en el navegador.
+
+No debe ser obligatorio entrar primero por la página de inicio.
+
+No modifiques innecesariamente el dominio personalizado ni la configuración de publicación de Netlify.
+
+Si una prueba no puede ejecutarse, indícalo.
+
+No declares que el proyecto compila correctamente si no lo has comprobado.
+
+---
+
+# 18. VELOCIDAD Y RESPONSIVE
+
+Prueba la web en:
+
+- 360 px.
+- 390 px.
+- 768 px.
+- 1366 px.
+- 1920 px.
+
+Comprueba:
+
+- Menú móvil.
+- Imágenes.
+- Tarjetas.
+- Tipografía.
+- Espaciado.
+- Formularios.
+- Navegación.
+- Tablas de contenidos.
+- Diagramas.
+- Pie de página.
+
+Evita el desplazamiento horizontal.
+
+Optimiza las imágenes sin perder innecesariamente su calidad.
+
+No cargues todas las imágenes originales a máxima resolución.
+
+No retrases la imagen principal con lazy loading si es el elemento visual principal de la portada.
+
+---
+
+# 19. LISTA FINAL DE VERIFICACIÓN
+
+Antes de terminar, confirma cada uno de estos puntos:
+
+[ ] La portada tiene una identidad editorial profesional.
+
+[ ] La portada contiene fotografías pertinentes.
+
+[ ] Las tarjetas utilizan imágenes específicas de sus artículos.
+
+[ ] Los ocho artículos están completos.
+
+[ ] Cada artículo tiene una imagen principal pertinente.
+
+[ ] Los pasos de los tutoriales son claros y detallados.
+
+[ ] Los diagramas son legibles y están correctamente identificados.
+
+[ ] Las categorías funcionan.
+
+[ ] Las páginas institucionales funcionan.
+
+[ ] Los enlaces internos funcionan.
+
+[ ] Las imágenes locales existen realmente.
+
+[ ] No hay imágenes rotas.
+
+[ ] No hay textos de demostración.
+
+[ ] No hay secciones vacías presentadas como terminadas.
+
+[ ] No hay artículos duplicados.
+
+[ ] No hay enlaces ficticios.
+
+[ ] El código de AdSense aparece una sola vez.
+
+[ ] El archivo ads.txt está correctamente configurado.
+
+[ ] El sitemap contiene rutas válidas.
+
+[ ] Robots.txt apunta al sitemap correcto.
+
+[ ] Las etiquetas canonical son correctas.
+
+[ ] Las rutas internas funcionan en producción.
+
+[ ] El diseño funciona en móviles.
+
+[ ] El proyecto compila sin errores.
+
+[ ] El README describe cómo instalar y desplegar el proyecto.
+
+---
+
+# 20. ENTREGA
+
+Quiero recibir el proyecto completo actualizado.
+
+No me entregues solamente capturas de pantalla.
+
+No me entregues solamente una nueva página de inicio.
+
+No me entregues únicamente recomendaciones.
+
+Implementa los cambios directamente en el código.
+
+Conserva los archivos útiles y modifica los componentes necesarios.
+
+Incluye las imágenes locales que realmente hayas incorporado.
+
+Incluye los artículos completos.
+
+Incluye la configuración de SEO y AdSense.
+
+Incluye la documentación.
+
+Al finalizar, genera un ZIP descargable con el proyecto completo.
+
+No incluyas node_modules ni cachés innecesarias.
+
+Entrega también un informe breve que indique:
+
+1. Qué archivos modificaste.
+2. Qué imágenes incorporaste realmente.
+3. Qué artículos revisaste.
+4. Qué páginas completaste.
+5. Qué pruebas ejecutaste.
+6. Si la compilación tuvo éxito.
+7. Qué problemas quedan pendientes.
+8. Qué debe comprobarse después del despliegue.
+
+No afirmes que Google AdSense aprobará la web.
+
+No afirmes que Google ya la ha revisado.
+
+No inventes resultados de pruebas.
+
+El resultado debe ser una revista digital real, visualmente completa, con contenido editorial sustancial y una experiencia de lectura profesional.
+
+**PRIORIDAD ABSOLUTA: completar el contenido y las imágenes de la web existente. No volver a entregar una maqueta visual.**

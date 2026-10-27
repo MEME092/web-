@@ -1,0 +1,543 @@
+# MASTER PROMPT — COMPLETE AUDIT, REPAIR AND FINALIZATION OF THREAD & PETAL
+
+## 1. YOUR ROLE AND MAIN OBJECTIVE
+
+Act as a senior full-stack developer, technical SEO specialist, editorial reviewer for a sewing and fabric crafts website, accessibility specialist, and Google AdSense readiness consultant.
+
+I am providing you with the latest ZIP of my existing website project.
+
+**Website name:** Thread & Petal  
+**Website URL:** https://4kt.lat/  
+**Website language:** English  
+**Niche:** Sewing, fabric crafts, clothing repairs, beginner sewing tutorials, and practical textile projects.  
+**Owner/contact:** Andres Martinez  
+**Contact email:** andresy1999@gmail.com  
+**Google AdSense publisher ID:** ca-pub-5714100747253670  
+**ads.txt authorization line:**  
+`google.com, pub-5714100747253670, DIRECT, f08c47fec0942fa0`
+
+Your mission is to audit, repair, improve, test, and package the actual uploaded project. Do not merely provide advice, a report, or code snippets. Make the changes directly to the project and deliver a complete, working, production-ready ZIP.
+
+Do not rebuild the website from scratch unless a specific technical problem makes it necessary. Preserve the existing visual identity, brand name, useful components, article content, navigation, and working functionality wherever possible.
+
+Do not claim a task is complete unless you have actually implemented and verified it.
+
+## 2. FIRST: INSPECT THE ACTUAL PROJECT
+
+Before editing anything:
+
+1. Extract and inspect the latest uploaded ZIP.
+2. Identify the actual framework, package manager, routing system, build scripts, hosting configuration, article data, images, metadata, and policy pages.
+3. Read the relevant source files instead of assuming that earlier audit notes are still accurate.
+4. Identify all eight articles and inspect their complete content.
+5. Create a prioritized list of issues discovered in the current version.
+6. Keep the original project intact until a corrected version has been generated and tested.
+
+The project is believed to use React, TypeScript, Vite, React Router, and Netlify. Confirm this from the actual files before making assumptions.
+
+Important: the latest uploaded ZIP is the source of truth. Do not blindly reuse previous ZIPs, old patches, or earlier audit conclusions.
+
+## 3. FIX STATIC HTML, ROUTING AND TECHNICAL SEO
+
+### 3.1 Static HTML and rendering
+
+The website must provide meaningful initial HTML for every important public route.
+
+Inspect the existing static HTML generation script and the production build process.
+
+Requirements:
+
+- Every article must have its own generated HTML file or another verified rendering solution that provides its article-specific content and metadata in the initial server response.
+- The homepage, article pages, About, Contact, Privacy Policy, Terms, and other existing public pages must render correctly.
+- Article titles, descriptions, canonical URLs, headings, main content, and relevant structured data must not depend exclusively on a client-side `useEffect`.
+- Ensure generated pages contain the correct content and are not simply copies of the homepage.
+- Ensure React hydration or client-side navigation does not create duplicate content, duplicate metadata, or runtime errors.
+- Keep internal links functional when JavaScript is enabled and when a visitor opens an article directly.
+- Verify that trailing slashes, URL normalization, and canonical URLs are consistent.
+
+If the current static generation approach is unreliable, implement a compatible solution that works with the existing stack and hosting platform. Do not migrate frameworks unnecessarily.
+
+### 3.2 Metadata
+
+For each indexable page, provide:
+
+- A unique, descriptive title.
+- A natural, accurate meta description.
+- One appropriate canonical URL.
+- Correct Open Graph title, description, URL, and image where relevant.
+- Appropriate social sharing metadata.
+- A correct robots directive.
+- Descriptive image alternative text.
+
+Do not copy the same title and description onto every article.
+
+Use `https://4kt.lat/` as the canonical domain unless the existing deployment configuration demonstrates that another canonical form is required. Do not invent a new domain.
+
+### 3.3 Sitemap and robots.txt
+
+Inspect all sitemap and robots files.
+
+- Keep one authoritative XML sitemap in the location expected by the website.
+- Include only canonical, publicly accessible, indexable URLs that return successful responses.
+- Exclude nonexistent pages, duplicates, redirects, and noncanonical URLs.
+- Use absolute HTTPS URLs on the correct domain.
+- Include the sitemap location in `robots.txt`.
+- Ensure robots rules do not accidentally block article content, stylesheets, scripts, or images required for rendering.
+- Remove conflicting or redundant sitemap copies where appropriate.
+
+### 3.4 HTTP status codes and 404 pages
+
+Inspect `public/_redirects`, `netlify.toml`, and any routing configuration.
+
+The current configuration may send every unknown route to `/index.html` with HTTP 200. Fix this if confirmed.
+
+Requirements:
+
+- Valid pages return appropriate successful status codes.
+- Unknown URLs display a useful, branded 404 page and must not be treated as valid articles.
+- Avoid soft 404s caused by rendering a not-found message under HTTP 200 wherever the hosting architecture allows a correct 404 response.
+- Preserve working direct navigation to valid article URLs.
+- Do not introduce redirect loops.
+- Verify trailing-slash and extension behavior.
+
+Test both existing routes and deliberately nonexistent routes.
+
+## 4. GOOGLE ADSENSE AND ADS.TXT
+
+Preserve the existing publisher ID exactly.
+
+### 4.1 AdSense integration
+
+Inspect the actual AdSense script and ad placement components.
+
+Requirements:
+
+- Ensure the official AdSense script is included only as required by the chosen integration.
+- Avoid duplicate script injection from `index.html`, React components, or route changes.
+- Do not invent ad slot IDs or add fake ad units.
+- Do not create artificial ad clicks, forced interactions, misleading ad labels, or content that encourages visitors to click ads.
+- Ads must not obscure navigation, article text, buttons, or essential content.
+- Keep ad placements visually separated from navigation and interactive controls.
+- Avoid excessive ad density or disruptive overlays.
+- Ensure ad code does not cause console errors if advertising is unavailable or blocked.
+- Do not insert placeholder advertisements that imitate real Google ads.
+- If no valid ad slot configuration is available, do not invent one. Preserve the existing valid integration and document what still requires action in the AdSense dashboard.
+
+### 4.2 ads.txt
+
+Verify that the production output contains:
+
+`google.com, pub-5714100747253670, DIRECT, f08c47fec0942fa0`
+
+The public path must be:
+
+`https://4kt.lat/ads.txt`
+
+Requirements:
+
+- The file must be plain text and accessible without authentication.
+- It must not redirect to the homepage.
+- It must not return an HTML document.
+- The exact publisher authorization line must be preserved.
+- Remove duplicate or conflicting entries only when verified unnecessary.
+- Verify that the production build copies the file to the correct output directory.
+
+Do not claim that AdSense is approved. This project should be prepared for review, but approval remains Google's decision.
+
+## 5. PRIVACY, COOKIES AND CONSENT — HIGH PRIORITY
+
+Audit `CookieBanner.tsx`, any consent utilities, analytics integrations, and the AdSense script loading behavior.
+
+The current consent banner may save choices to `localStorage` without actually controlling advertising or analytics. Fix this rather than merely changing the wording.
+
+### Required audit
+
+First identify the services actually used by the site. Do not claim that Google Analytics, tracking pixels, or other tools are present unless they are implemented.
+
+### Consent implementation
+
+- Clearly distinguish essential functionality from optional analytics and advertising where applicable.
+- Make the available controls perform the action their labels promise.
+- Persist consent choices appropriately.
+- Provide a way to reopen or change cookie preferences.
+- Ensure a saved refusal is respected.
+- Avoid loading nonessential scripts before consent where consent is required.
+- Do not assume that hiding a banner is equivalent to obtaining consent.
+- Prevent the consent interface from appearing repeatedly after a valid choice unless a legitimate consent renewal is needed.
+- Keep the interface accessible by keyboard and screen reader.
+- Do not block essential navigation or make the site unusable if the visitor refuses optional cookies.
+
+For advertising in regions where Google's consent requirements apply, investigate the current applicable Google requirements and implement an appropriate Google-certified consent management platform if necessary. Do not pretend a homemade banner automatically satisfies every legal or Google requirement.
+
+If a proper consent implementation cannot be completed within the existing integration, explain exactly what must be configured and do not falsely mark the issue resolved.
+
+### Privacy and legal pages
+
+Inspect and update the Privacy Policy, Cookie Policy if present, Terms, About, and Contact pages.
+
+- Ensure the Privacy Policy accurately describes the services actually used.
+- Explain relevant advertising cookies, personalized advertising, third-party providers, and consent choices in clear language where applicable.
+- Include appropriate information about how users can contact the site owner.
+- Avoid claiming legal compliance that has not been verified.
+- Do not fabricate a company, registered business, physical office, professional certification, editorial studio, or legal status.
+- Do not invent a postal address or telephone number.
+- Do not add an unsupported legal claim merely to make the website look more trustworthy.
+- Keep the contact details consistent with the supplied owner information.
+- Do not add fake testimonials, fake reviews, fake authors, or fake editorial credentials.
+
+## 6. EDITORIAL REVIEW: ALL EIGHT ARTICLES
+
+This is a central requirement, not an optional content-polishing step.
+
+Inspect every complete article in the current source code. Review the instructions, measurements, claims, safety warnings, tools, material recommendations, FAQs, troubleshooting, image captions, and internal links.
+
+The website should offer useful, original, accurate practical information, not merely long text generated from a repeated template.
+
+Do not remove useful content simply to make articles shorter. Improve substance, accuracy, clarity, and usefulness.
+
+### Article 1: How to Sew a Button by Hand: A Step-by-Step Guide
+
+Check and improve:
+
+- How to position and secure the button.
+- How to choose thread and needle.
+- How to sew two-hole and four-hole buttons where appropriate.
+- How to create suitable thread shanks when needed.
+- How to secure the thread without leaving an uncomfortable knot.
+- How to avoid puckering or pulling fabric too tightly.
+- How to finish and inspect the repair.
+
+Remove unsupported universal advice about applying fabric glue to the back of the knot. If an adhesive is ever discussed, explain its limitations and compatibility rather than presenting it as a standard substitute for sewing.
+
+### Article 2: How to Repair a Small Hole in a T-Shirt
+
+Check and improve:
+
+- The distinction between a small clean hole, a tear, and a worn or thinning area.
+- When hand stitching, patching, or another repair method is suitable.
+- How to avoid stretching knit fabric.
+- Thread and needle choices appropriate for T-shirt material.
+- How to keep the repair comfortable and flexible.
+- How to inspect the repaired area after washing.
+
+Qualify claims about the causes of tiny holes. Do not present an unverified cause as certain, and do not imply that one repair technique works equally well for every fabric or hole.
+
+### Article 3: How to Hem Pants Without a Sewing Machine
+
+Check and improve:
+
+- How to establish the desired finished length.
+- How shoes and intended use affect hem placement.
+- How to measure and mark both pant legs consistently.
+- How to account for hem allowance.
+- How to fold and press the fabric safely.
+- Which hand stitch is appropriate and how to keep it discreet.
+- Differences between lightweight and heavyweight fabrics.
+- How to test the result before trimming excess fabric.
+
+Ensure that the measurements and instructions agree with one another.
+
+### Article 4: How to Measure Yourself for Sewing Patterns
+
+Check and improve:
+
+- Accurate placement of the measuring tape.
+- Bust or chest, waist, hip, and other relevant measurements.
+- Posture and tape tension.
+- How to measure without distorting the body or garment.
+- The distinction between body measurements, pattern measurements, wearing ease, and finished garment measurements.
+- How to compare measurements with a particular pattern's size chart.
+- How to handle measurements that fall across different pattern sizes.
+
+Do not imply that every brand or pattern uses identical size charts or measurement conventions.
+
+### Article 5: How to Make Fabric Flowers for Clothing and Accessories
+
+Check and improve:
+
+- Material and fabric selection.
+- Cutting and assembling petals.
+- Securing the center and layers.
+- Attaching the finished flower to a garment or accessory.
+- How the construction changes depending on the desired flower.
+- Heat and burn risks when working with synthetic fabric or hot tools.
+- Suitability of attachments for lightweight garments and accessories.
+
+Do not suggest burning or melting fabric edges without a clear, proportionate safety warning and a suitable context. Offer a safer alternative where appropriate.
+
+### Article 6: How to Repair a Loose Seam in Your Clothes
+
+Check and improve:
+
+- How to identify a seam that has come undone versus fabric that has torn.
+- How to match the original seam line.
+- Thread, needle, stitch length, and seam allowance.
+- How to secure the start and finish.
+- How to prevent the repair from puckering.
+- When the fabric is too weak for a simple seam repair.
+- How to test the repaired seam without excessive pulling.
+
+### Article 7: How to Choose the Right Sewing Needle for Different Fabrics
+
+Check and improve:
+
+- The difference between needle systems and needle sizes where relevant.
+- Suitable needle types for woven fabrics, knit fabrics, denim, and delicate materials.
+- How thread, fabric thickness, and machine compatibility affect the choice.
+- Common signs that a needle may be unsuitable or damaged.
+- Appropriate advice for hand-sewing versus machine-sewing needles.
+
+Avoid universal recommendations where the best choice depends on the fabric, thread, machine, or project. Do not recommend unsafe needle-testing methods.
+
+### Article 8: How to Sew a Simple Fabric Tote Bag
+
+Check and improve:
+
+- Cutting dimensions and seam allowances.
+- Fabric grain and preparation.
+- Construction sequence.
+- Handle length, placement, and reinforcement.
+- Bottom-corner construction if included.
+- Turning and pressing the finished bag.
+- The difference between cut dimensions and finished dimensions.
+- The expected effect of seam allowances on the final size.
+
+Recalculate every dimension, particularly any boxed-corner or finished-size calculations. Ensure the stated final dimensions follow mathematically from the cut dimensions and sewing allowances. Do not invent measurements without checking them against the actual construction.
+
+## 7. EDITORIAL QUALITY STANDARD FOR EVERY ARTICLE
+
+Each article must satisfy the following standards where appropriate to its subject.
+
+- Begin with a concise explanation of what the reader will achieve and when the technique is useful.
+- Provide a realistic list of materials and tools.
+- Explain preparation before the main steps.
+- Use numbered steps in a logical order.
+- Include specific, actionable instructions rather than generic filler.
+- Explain common mistakes and how to avoid or correct them.
+- Include troubleshooting that addresses actual problems a beginner might encounter.
+- Include useful FAQs without repeating the same information unnecessarily.
+- Use consistent measurements and explain whether they are approximate.
+- Distinguish general guidance from fabric-specific exceptions.
+- Use natural, idiomatic English suitable for an English-language craft website.
+- Correct spelling, grammar, punctuation, awkward phrasing, and repetitive transitions.
+- Remove unsupported statistics, fabricated testing claims, invented quotes, and unverifiable assertions.
+- Do not claim a technique was physically tested unless that is true.
+- Do not claim an author has professional credentials unless verified.
+- Do not invent sources, citations, expert endorsements, or product tests.
+- Add credible references only when useful and genuinely verified.
+- Ensure each article offers meaningful value beyond a superficial summary.
+- Avoid keyword stuffing, repetitive exact-match phrases, and generic SEO filler.
+- Keep article content consistent with its title, images, FAQs, metadata, and structured data.
+
+Do not rewrite all eight articles into the same generic template. Retain subject-specific details and improve each article according to the actual technique.
+
+## 8. IMAGE QUALITY, ATTRIBUTION AND PERFORMANCE
+
+Inspect every image reference in the project.
+
+- Ensure each article uses an image relevant to the actual subject.
+- Verify that all referenced image files exist in the production output.
+- Remove broken image references.
+- Use descriptive, accurate alt text.
+- Avoid keyword-stuffed alt attributes.
+- Remove misleading captions or claims that imply a real editorial studio or physical testing facility when that is not established.
+- Preserve appropriate image credits and licenses where available.
+- Do not fabricate image ownership or licensing.
+- Use responsive image sizing and suitable modern formats where feasible.
+- Lazy-load below-the-fold images.
+- Do not lazy-load the main above-the-fold hero image if doing so would harm loading performance.
+- Set image width and height or aspect ratio to reduce layout shifts.
+- Avoid unnecessarily large images and duplicated assets.
+- Preserve image quality appropriate for detailed craft instructions.
+
+If image generation or image replacement is required, do not fabricate photographs of real testing or claim that a generated image documents an actual completed project.
+
+## 9. AUTHORSHIP, TRUST AND SITE IDENTITY
+
+Ensure the site accurately represents who operates it and what it provides.
+
+- Preserve the Thread & Petal brand and the `4kt.lat` domain.
+- Keep contact information consistent.
+- Make About and Contact pages easy to find.
+- Explain the site's focus on practical sewing and fabric craft tutorials.
+- Describe the editorial approach truthfully.
+- Do not invent a staff, studio, physical location, credentials, professional qualifications, or history.
+- Remove false or unsupported claims about real-world testing.
+- Make it easy for visitors to identify the purpose of the site and contact its operator.
+- Use a consistent visual identity across all public pages.
+
+Do not add fake trust badges, fake awards, fabricated reader testimonials, fake social proof, or unsupported guarantees of accuracy.
+
+## 10. ACCESSIBILITY AND RESPONSIVE DESIGN
+
+Audit the entire site on mobile, tablet, and desktop layouts.
+
+Requirements:
+
+- Navigation and dropdowns work by keyboard and touch.
+- Buttons have meaningful accessible names.
+- Form fields have labels and usable error messages.
+- Text contrast is adequate.
+- Headings follow a logical hierarchy.
+- Images have appropriate alternative text.
+- Focus indicators remain visible.
+- Cookie preferences and dialogs are keyboard-accessible.
+- No essential content is clipped on narrow screens.
+- Links are visually distinguishable.
+- Interactive elements are not hidden behind advertisements or overlays.
+- Respect reduced-motion preferences where animations are used.
+- Avoid unnecessary animation and layout shifts.
+- Check for React console errors and accessibility regressions.
+
+Preserve the existing design wherever possible. Improve usability without introducing an unrelated redesign.
+
+## 11. INTERNAL LINKS AND NAVIGATION
+
+Check:
+
+- Homepage article cards.
+- Article-to-article links.
+- Category and topic links, if present.
+- Breadcrumbs, if present.
+- Header and footer navigation.
+- About, Contact, Privacy Policy, Terms, and cookie preference access.
+- Social links, if present.
+- Related articles and pagination, if present.
+
+Remove dead, placeholder, misleading, and duplicate links. Do not invent social accounts or destinations. Use meaningful link text and ensure the links point to the correct canonical URLs.
+
+## 12. PERFORMANCE AND CODE QUALITY
+
+Inspect the project for:
+
+- Duplicate assets.
+- Unused images.
+- ZIP archives or development artifacts included in the source package.
+- Duplicate sitemap files.
+- Unused dependencies, but remove them only after verifying they are not needed.
+- Repeated script injection.
+- React warnings and runtime exceptions.
+- TypeScript errors.
+- Broken imports.
+- Missing files.
+- Incorrect asset paths.
+- Unnecessary large dependencies.
+- Avoidable layout shifts.
+- Large images without optimization.
+
+Do not perform risky dependency upgrades merely for the sake of upgrading. Keep the project compatible with its current deployment environment.
+
+Ensure build artifacts are generated in the correct directory and that Netlify serves the generated site rather than stale or incomplete output.
+
+## 13. TESTING REQUIREMENTS — DO NOT SKIP
+
+Run the actual project commands using the package manager and scripts present in the repository.
+
+At minimum:
+
+1. Install dependencies with the appropriate lockfile and package manager.
+2. Run the TypeScript or lint/check script.
+3. Run the production build.
+4. Fix build failures rather than merely reporting them.
+5. Run the production preview or an equivalent local server if available.
+6. Test the homepage and all eight article URLs.
+7. Test About, Contact, Privacy Policy, Terms, and any other policy pages.
+8. Test an intentionally nonexistent URL.
+9. Verify every referenced image exists.
+10. Verify article-specific title, description, canonical URL, and main heading in the generated HTML.
+11. Verify structured data is valid JSON and consistent with visible content.
+12. Check for duplicate metadata and duplicate AdSense script injection.
+13. Verify `/ads.txt` contains the exact authorized publisher line.
+14. Verify the sitemap is valid XML and contains only valid canonical pages.
+15. Check for console errors, broken links, and missing assets where practical.
+
+If a tool, dependency download, browser, or external service is unavailable, state exactly what could not be tested. Never report a failed or unexecuted test as successful.
+
+Do not claim that a live URL was tested unless you actually accessed and verified it.
+
+## 14. GOOGLE SEARCH AND ADSENSE READINESS REVIEW
+
+Prepare a final checklist that separates three categories:
+
+**A. Verified and fixed in the project**
+- Build and routing.
+- Static HTML and metadata.
+- Content and structured data.
+- ads.txt and script integration.
+- Policies and consent implementation.
+- Internal links and images.
+
+**B. Requires owner configuration or live-site verification**
+- AdSense account status and any review messages.
+- Netlify production deployment.
+- Domain and HTTPS availability.
+- Actual public access to robots.txt, sitemap.xml, and ads.txt.
+- Any required consent-management configuration.
+- Search Console and other external account settings.
+- Any ad unit settings that are not present in the supplied source.
+
+**C. Editorial or legal items requiring human judgment**
+- Claims about real-world testing or credentials.
+- Any unresolved factual or safety issue.
+- Legal adequacy of policies for the actual jurisdictions and services involved.
+
+Do not guarantee AdSense approval. Do not state that the website complies with every Google or legal policy unless that conclusion has been independently established.
+
+## 15. FINAL DELIVERABLES
+
+Deliver all of the following:
+
+### Deliverable 1: Complete corrected ZIP
+
+Create a new ZIP containing the entire corrected project, including the source code, content, assets, configuration, and all required files to reproduce the build.
+
+The ZIP must not contain nested copies of the original ZIP, unnecessary generated artifacts, duplicate unused assets, or local dependency folders such as `node_modules`.
+
+Do not deliver only a patch or a few modified files.
+
+### Deliverable 2: REVIEW-NOTES.md
+
+Include a concise but useful report listing:
+
+- Every important issue discovered.
+- What was changed.
+- Which files were modified.
+- Which issues remain unresolved.
+- What was actually tested.
+- The exact results of the build and type-check commands.
+- Any owner action still required.
+
+### Deliverable 3: FINAL-CHECKLIST.md
+
+Provide a step-by-step checklist for deploying the corrected project to Netlify and verifying the public site.
+
+Include the precise public paths that should be checked, including:
+
+- `https://4kt.lat/`
+- Each of the eight article URLs, using their actual canonical paths.
+- `https://4kt.lat/robots.txt`
+- `https://4kt.lat/sitemap.xml`
+- `https://4kt.lat/ads.txt`
+
+Do not invent article URLs. Extract the actual routes from the project.
+
+### Deliverable 4: Summary of changes
+
+Explain the most important corrections in clear English or Spanish. State which tests passed and which could not be completed.
+
+Provide the actual downloadable ZIP and report files if the environment supports file attachments. Verify that the files exist and are readable before presenting download links.
+
+## 16. EXECUTION RULES
+
+- Work on the uploaded project directly.
+- Do not stop after the audit.
+- Do not return a generic tutorial about how I could make the changes myself.
+- Do not ask me to perform tasks that you can perform within the project.
+- Do not remove articles or essential features simply to make the project smaller.
+- Do not replace detailed craft instructions with generic filler.
+- Do not invent information about the owner, company, testing, credentials, analytics, or advertising configuration.
+- Do not fabricate test results.
+- Do not guarantee Google AdSense approval.
+- If a requirement cannot be implemented safely or verified, document the precise limitation and continue with the remaining work.
+
+**Start by inspecting the actual uploaded ZIP, then implement the fixes, test the resulting production build, and deliver the complete corrected project.**

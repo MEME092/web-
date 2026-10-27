@@ -1,0 +1,8 @@
+{
+  "name": "Thread & Petal",
+  "description": "Practical Sewing, Clothing Repair & Fabric Crafts. Digital magazine with step-by-step sewing guides, garment alteration, and textile crafts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
